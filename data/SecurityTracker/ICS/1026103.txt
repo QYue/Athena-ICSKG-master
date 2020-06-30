@@ -1,0 +1,19 @@
+-cve: CVE-2011-3389|
+
+-product: Windows TCP/IP Stack
+
+-vendor: Microsoft
+
+-version: Version(s): XP SP3, 2003 SP2, Vista SP2, 2008 SP2, 7 SP1, 2008 R2 SP1; and prior service packs
+
+-solution: No solution was available at the time of this entry.
+
+-impact: Disclosure of user information| Modification of user information|
+
+-vendor confirmed: 1
+
+-fix available: 0
+
+-intrusions: 
+
+-researcher: 

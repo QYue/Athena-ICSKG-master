@@ -1,0 +1,30 @@
+ICS Advisory (ICSA-10-097-01)
+
+ABB NETCADOPS HELP SYSTEM VULNERABILITY
+
+Overview
+
+A cross-site scripting vulnerability exists in the system used by the ABB Electrical Distribution Management System (DMS) product netCADOPS to generate online Help. [Footnote:a]
+
+Affected Products
+
+All releases of the ABB netCADOPS product.
+
+The ABB Network Manager DMS client products ORMap and OMI are not affected by this problem, because this vulnerability is related solely to netCADOPS web-based online Help. Further, no other ABB SCADA products, including, but not limited to, MicroSCADA Pro, RANGER, Network Manager NM-R, and 800xA are affected by this vulnerability.
+
+Impact
+
+At this time, ICS-CERT has not independently verified the vulnerability or update to determine the condition details and potential impact to organizations. ICS-CERT is providing this notice to make organizations aware of the vulnerability and patch release from ABB. ICS-CERT recommends that organizations contact ABB for additional details to evaluate the impact of this vulnerability based on their environment, architecture, and product implementation.
+
+Background
+
+ABB is a power and automation technology company. The ABB DMS is used by electric utilities to manage their distribution level infrastructure.
+
+Mitigation
+
+ABB recommends removing the netCADOPS Help files from the netCADOPS web server installation directory.
+A new Help system that resolves the vulnerability is included in the NM DMS 3.4.7.5.201002160 patch release. Contact your ABB Network Management software maintenance services representative or Doug Wall (doug.wall@us.abb.com) for further instructions.
+
+The Control System Security Program also provides a recommended practices section for control systems on the US-CERT website. Several recommended practices are available for reading or download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies.
+
+·a. http://www.owasp.org/index.php/Cross-siteScripting(XSS)

@@ -1,0 +1,19 @@
+-cve: CVE-2011-3388| CVE-2011-3389|
+
+-product: Opera
+
+-vendor: Opera Software
+
+-version: Version(s): prior to 11.51
+
+-solution: The vendor has issued a fix (11.51).
+
+-impact: Disclosure of user information| Modification of system information| Modification of user information|
+
+-vendor confirmed: 1
+
+-fix available: 1
+
+-intrusions: 
+
+-researcher: Two vulnerabilities were reported in Opera. A remote user can spoof the address bar security information. A remote user can decrypt SSL/TLS sessions in certain cases.

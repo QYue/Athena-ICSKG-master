@@ -1,0 +1,92 @@
+ICS Advisory (ICSA-16-313-03)
+
+OSIsoft PI System Incomplete Model of Endpoint Features Vulnerability
+
+OVERVIEW
+
+OSIsoft has identified an incomplete model of endpoint features vulnerability in OSIsoft’s PI System software. OSIsoft has produced new versions to mitigate this vulnerability.
+
+AFFECTED PRODUCTS
+
+The following PI System software versions are affected:
+
+·Applications using PI Asset Framework (AF) Client versions prior to PI AF Client 2016, Version 2.8.0,
+·Applications using PI Software Development Kit (SDK) versions prior to PI SDK 2016, Version 1.4.6,
+·PI Buffer Subsystem, versions prior to and including, Version 4.4, and
+·PI Data Archive versions prior to PI Data Archive 2015, Version 3.4.395.64.
+
+IMPACT
+
+Successful exploitation of this vulnerability could cause a shutdown of the PI Data Archive or connected applications. In the case of the PI Buffer Subsystem Service, this shutdown can result in unrecoverable data loss. Desktop clients, web servers, and other data access servers could also be potential targets of this type of shutdown.
+
+Impact to individual organizations depends on many factors that are unique to each organization. NCCIC/ICS-CERT recommends that organizations evaluate the impact of this vulnerability based on their operational environment, architecture, and product implementation.
+
+BACKGROUND
+
+OSIsoft is a US-based company that maintains headquarters in San Leandro, California, with global operations.
+
+The affected products are PI AF Client, PI SDK, PI Buffer Subsystem, and PI Data Archive. The AF Client is a repository for asset-centric models, hierarchies, objects, and equipment. The PI SDK is a programming library providing access to PI Servers. Both the PI AF Client and PI SDK are frequently included with other software packages. The PI Data Archive is the core server technology used in the PI System for real time data storage and distribution of instrument data. PI Buffer Subsystem provides buffering for most current PI Client applications, as well as PI Interfaces. According to OSIsoft, these products are deployed across multiple sectors. OSIsoft estimates that these products are used worldwide.
+
+VULNERABILITY CHARACTERIZATION
+
+VULNERABILITY OVERVIEW
+
+INCOMPLETE MODEL OF ENDPOINT FEATURES [Footnote:a]
+
+The affected products operate between endpoints without a complete model of endpoint features potentially causing the product to perform actions based on this incomplete model, which could result in a denial of service. OSIsoft reports that in order to exploit the vulnerability an attacker would need to be locally connected to a server.
+
+CVE-2016-8365 has been assigned to this vulnerability. A CVSS v3 base score of 7.1 has been assigned; the CVSS vector string is (AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H). [Footnote:b,c]
+
+VULNERABILITY DETAILS
+
+EXPLOITABILITY
+
+This vulnerability is not exploitable remotely.
+
+EXISTENCE OF EXPLOIT
+
+No known public exploits specifically target this vulnerability.
+
+DIFFICULTY
+
+An attacker with a low skill would be able to exploit this vulnerability.
+
+MITIGATION
+
+To fully address potential for data loss or disconnection due to this issue, OSIsoft encourages users to upgrade to:
+
+·PI Buffer Subsystem, Version 4.5.0 or later,
+·PI AF Client 2016, Version 2.8.0 or later,
+·PI SDK 2016, Version 1.4.6 or later, and
+·PI Data Archive 2016, Version 3.4.400.1162 or later.
+
+For additional information about the vulnerability and recommended mitigation plan, OSIsoft’s security bulletin AL00308, OSIsoft Releases Security Updates for Core Networking Component in PI System 2016 is available at the following location:
+
+https://techsupport.osisoft.com/Troubleshooting/Alerts/AL00308
+
+In order to perform the upgrades, users can use the PI AF Client 2016 Install Kit to upgrade PI AF Client and the PI Buffer Subsystem together. Users can use the PI SDK 2016 Install Kit to upgrade the PI SDK. If PI Buffer Subsystem is installed on a machine without PI AF Client, users can use the PI Interface Configuration Utility (ICU) Install Kit (1.4.16.79B) to upgrade buffering without installing the PI AF Client software.
+
+OSIsoft also offers the following defensive measures:
+
+·Use transport security protection for all remote connections to the PI Data Archive Server to block attacks from adjacent networks.
+·PI AF Client 2015, Version 2.7 and PI Buffer Subsystem, Version 4.4 automatically enable transport security with PI Data Archive Server 2015, Version 3.4.395.64 or later when the connecting application uses Windows Integrated Security (WIS).
+·In order to verify an application is connecting with WIS and using transport security, review the PI Data Archive Server message log entries. For each successful connection, there will be a message with event ID 7082. The Method should be “Windows Login,” and if the connection is using transport security, then the ciphers will also be listed.
+·If users are running PI Data Archive PR1, Version 3.4.375.38, to avoid data loss, it is imperative to upgrade PI SDK, PI AF Client, and PI Buffer Subsystem nodes before the PI Data Archive.
+
+ICS-CERT recommends that users take defensive measures to minimize the risk of exploitation of this vulnerability. Specifically, users should:
+
+·Minimize network exposure for all control system devices and/or systems, and ensure that they are not accessible from the Internet.
+·Locate control system networks and remote devices behind firewalls, and isolate them from the business network.
+·When remote access is required, use secure methods, such as Virtual Private Networks (VPNs), recognizing that VPNs may have vulnerabilities and should be updated to the most current version available. Also recognize that VPN is only as secure as the connected devices.
+
+ICS-CERT reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.
+
+ICS-CERT also provides a section for control systems security recommended practices on the ICS-CERT web page. Several recommended practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies.
+
+Additional mitigation guidance and recommended practices are publicly available in the ICS‑CERT Technical Information Paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies, that is available for download from the ICS-CERT web site.
+
+Organizations observing any suspected malicious activity should follow their established internal procedures and report their findings to ICS-CERT for tracking and correlation against other incidents.
+
+·a. CWE-437: Incomplete Model of Endpoint Features, https://cwe.mitre.org/data/definitions/437.html, web site last accessed November 08, 2016.
+·b. NVD, https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-8365, NIST uses this advisory to create the CVE web site report. This web site will be active sometime after publication of this advisory.
+·c. CVSS Calculator, https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H, web site last accessed November 08, 2016.

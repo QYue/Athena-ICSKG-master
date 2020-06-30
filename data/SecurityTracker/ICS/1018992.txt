@@ -1,0 +1,19 @@
+-cve: CVE-2007-6483|
+
+-product: Sentinel
+
+-vendor: SafeNet
+
+-version: Version(s): Protection Server 7.0.0 through 7.4.0l; Keys Server 1.0.3; possibly prior versions
+
+-solution: The vendor has issued fixed versions (Protection Server 7.4.1, Keys Server 1.0.4).
+
+-impact: Disclosure of system information| Disclosure of user information|
+
+-vendor confirmed: 1
+
+-fix available: 1
+
+-intrusions: 
+
+-researcher: 

@@ -1,0 +1,19 @@
+-cve: CVE-2011-3389|
+
+-product: Oracle Java SE
+
+-vendor: Sun
+
+-version: Version(s): JDK and JRE 7; JDK and JRE 6 Update 27 and prior; JDK and JRE 5.0 Update 31 and prior; SDK and JRE 1.4.2_33 and prior
+
+-solution: Red Hat has issued a fix.
+
+-impact: Disclosure of user information|
+
+-vendor confirmed: 1
+
+-fix available: 1
+
+-intrusions: 
+
+-researcher: 

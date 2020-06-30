@@ -1,0 +1,15 @@
+Bugtraq ID:,76612
+Class:,Unknown
+CVE:,CVE-2015-6464
+Remote:,Yes
+Local:,No
+Published:,Sep 03 2015 12:00AM
+Updated:,Sep 03 2015 12:00AM
+Credit:,Erwin Paternotte of Applied Risk
+Vulnerable:,Moxa EDS-408A Series  3.4 build 14031419
+Not Vulnerable:,
+Moxa EDS-405A/EDS-408A Series Switches are prone to the following multiple security vulnerabilities: 
+1. A remote privilege-escalation vulnerability 
+2. A cross-site scripting vulnerability 
+3. A denial-of-service vulnerability 
+"Attackers can exploit these issues to cause a denial-of-service condition, gain elevated privileges or execute arbitrary script code in the  browser of an unsuspecting user in the context of the affected site.  This can allow the attacker to steal cookie-based authentication  credentials and launch other attacks."

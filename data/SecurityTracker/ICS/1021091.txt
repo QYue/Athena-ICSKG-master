@@ -1,0 +1,19 @@
+-cve: CVE-2008-4250|
+
+-product: Windows Drivers
+
+-vendor: Microsoft
+
+-version: Version(s): 2000 SP4, 2003 SP2, XP SP3, Vista SP1, 2008; and prior service packs
+
+-solution: The vendor has issued the following fixes:
+
+-impact: Execution of arbitrary code via network| User access via network|
+
+-vendor confirmed: 1
+
+-fix available: 1
+
+-intrusions: 
+
+-researcher: 
