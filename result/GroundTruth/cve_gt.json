@@ -1,0 +1,1858 @@
+{
+    "CVE Data": [
+           {
+            "Description": "Sql injection vulnerability in rockwell automation factorytalk energymetrix before 2.20.00 allows remote attackers to execute arbitrary sql commands via unspecified vectors.",
+            "CVE": "CVE-2016-4522",
+            "Vulnerability Type": "sql injection",
+            "Vendor": "rockwell automation",
+            "Affected Products": [
+                {
+                    "Product": "factorytalk energymetrix",
+                    "affected version": "before 2.20.00"
+                }
+            ]
+        },
+        {
+            "Description": "Multiple stack-based buffer overflows in the ntp time-server interface on meinberg ims-lantime m3000, ims-lantime m1000, ims-lantime m500, lantime m900, lantime m600, lantime m400, lantime m300, lantime m200, lantime m100, syncfire 1100, and lces devices with firmware before 6.20.004 allow remote attackers to obtain sensitive information, modify data, or cause a denial of service via a crafted parameter in a post request.",
+            "CVE": "CVE-2016-3988",
+            "Vulnerability Type": "stack-based buffer overflow",
+            "Vendor": "meinberg",
+            "Affected Products": [{
+                    "Product": "ims-lantime m3000",
+                    "affected version": ""
+                },
+                {
+                    "Product": "ims-lantime m500",
+                    "affected version": ""
+                },
+                {
+                    "Product": "meinberg ims-lantime m3000",
+                    "affected version": ""
+                },
+                {
+                    "Product": "ims-lantime m1000",
+                    "affected version": ""
+                },
+                {
+                    "Product": "lantime m600",
+                    "affected version": ""
+                },
+                {
+                    "Product": "lantime m400",
+                    "affected version": ""
+                },
+                {
+                    "Product": "lantime m300",
+                    "affected version": ""
+                }
+                ,
+                {
+                    "Product": "lantime m200",
+                    "affected version": ""
+                }
+                ,
+                {
+                    "Product": "lantime m100",
+                    "affected version": ""
+                }
+                ,
+                {
+                    "Product": "syncfire 1100",
+                    "affected version": ""
+                }
+                ,
+                {
+                    "Product": " lces devices",
+                    "affected version": "with firmware before 6.20.004"
+                }
+            ]
+        },
+        {
+            "Description": "Cross-site request forgery (csrf) vulnerability on siemens simatic s7-1500 cpu plc devices with firmware before 1.5.0 and simatic s7-1200 cpu plc devices with firmware before 4.0 allows remote attackers to hijack the authentication of unspecified victims via unknown vectors.",
+            "CVE": "CVE-2014-2249",
+            "Vulnerability Type": "cross-site request forgery (csrf)",
+            "Vendor": "siemens",
+            "Affected Products": [
+                {
+                    "Product": "simatic s7-1500 cpu plc devices",
+                    "affected version": "with firmware before 1.5.0"
+                },
+                {
+                    "Product": "simatic s7-1200 cpu plc devices",
+                    "affected version": "with firmware before 4.0"
+                }
+            ]
+        },
+        {
+            "Description": "An improper authentication issue was discovered in osisoft pi server 2017 pi data archive versions prior to 2017. pi data archive has protocol flaws with the potential to expose change records in the clear and allow a malicious party to spoof a server within a collective.",
+            "CVE": "CVE-2017-7930",
+            "Vulnerability Type": "improper authentication",
+            "Vendor": "osisoft",
+            "Affected Products": [
+                {
+                    "Product": "pi data archive",
+                    "affected version": "versions prior to 2017"
+                }
+            ]
+        },
+        {
+            "Description": "Eaton 9000x drivea versions 2.0.29 and prior has a stack-based buffer overflow vulnerability, which may allow remote code execution.",
+            "CVE": "CVE-2018-8847",
+            "Vulnerability Type": "stack-based buffer overflow",
+            "Vendor": "eaton",
+            "Affected Products": [
+                {
+                    "Product": "9000x drivea",
+                    "affected version": "versions 2.0.29 and prior"
+                },
+                {
+                    "Product": "",
+                    "affected version": ""
+                }
+            ]
+        },
+        {
+            "Description": "In delta industrial automation tpeditor, tpeditor versions 1.90 and prior, multiple out-of-bounds write vulnerabilities may be exploited by processing specially crafted project files lacking user input validation, which may cause the system to write outside the intended buffer area and may allow remote code execution.",
+            "CVE": "CVE-2018-17927",
+            "Vulnerability Type": "out-of-bounds write",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "tpeditor",
+                    "affected version": "versions 1.90 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "Delta industrial automation cncsoft, cncsoft screeneditor version 1.00.88 and prior. multiple out-of-bounds read vulnerabilities may be exploited, allowing information disclosure due to a lack of user input validation for processing specially crafted project files.",
+            "CVE": "CVE-2019-10949",
+            "Vulnerability Type": "out-of-bounds read",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "cncsoft screeneditor",
+                    "affected version": "version 1.00.88 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "Advantech webaccess 8.3.1 and earlier has several stack-based buffer overflow vulnerabilities that have been identified, which may allow an attacker to execute arbitrary code.",
+            "CVE": "CVE-2018-14816",
+            "Vulnerability Type": "stack-based buffer overflow",
+            "Vendor": "advantech",
+            "Affected Products": [
+                {
+                    "Product": "webaccess",
+                    "affected version": "8.3.1 and earlier"
+                }
+            ]
+        },
+        {
+            "Description": "A use after free: cwe-416 vulnerability exists in zelio soft 2, v5.2 and earlier, which could cause remote code execution when opening a specially crafted zelio soft 2 project file.",
+            "CVE": "CVE-2019-6822",
+            "Vulnerability Type": "use after free",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "zelio soft 2",
+                    "affected version": "v5.2 and earlier"
+                }
+            ]
+        },
+        {
+            "Description": "In advantech webaccess versions v8.2_20170817 and prior, webaccess versions v8.3.0 and prior, webaccess dashboard versions v.2.0.15 and prior, webaccess scada node versions prior to 8.3.1, and webaccess/nms 2.0.3 and prior, several untrusted pointer dereference vulnerabilities have been identified, which may allow an attacker to execute arbitrary code.",
+            "CVE": "CVE-2018-7497",
+            "Vulnerability Type": "untrusted pointer dereference",
+            "Vendor": "advantech",
+            "Affected Products": [
+                {
+                    "Product": "webaccess",
+                    "affected version": "versions v8.2_20170817 and prior"
+                },
+                {
+                    "Product": "webaccess dashboard",
+                    "affected version": "versions v.2.0.15 and prior"
+                },
+                {
+                    "Product": "webaccess scada node",
+                    "affected version": "versions prior to 8.3.1"
+                },
+                {
+                    "Product": "webaccess/nms",
+                    "affected version": "2.0.3 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "An improper authentication issue was discovered in envitech envidas ultimate versions prior to v1.0.0.5. the web application lacks proper authentication which could allow an attacker to view information and modify settings or execute code remotely.",
+            "CVE": "CVE-2017-9625",
+            "Vulnerability Type": "improper authentication",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "envidas ultimate",
+                    "affected version": "versions prior to v1.0.0.5"
+                }
+            ]
+        },
+        {
+            "Description": "An information exposure issue was discovered in saia burgess controls pcd controllers with pcd firmware versions prior to 1.28.16 or 1.24.69. in certain circumstances, the device pads ethernet frames with memory contents.",
+            "CVE": "CVE-2017-9628",
+            "Vulnerability Type": "information exposure",
+            "Vendor": "saia burgess controls",
+            "Affected Products": [
+                {
+                    "Product": "pcd controllers",
+                    "affected version": "versions prior to 1.28.16 or 1.24.69"
+                }
+
+            ]
+        },
+        {
+            "Description": "A command injection vulnerability in schneider electric homelynk controller exists in all versions before 1.5.0.",
+            "CVE": "CVE-2017-7689",
+            "Vulnerability Type": "command injection",
+            "Vendor": "schneider electric",
+            "Affected Products": [
+                {
+                    "Product": "homelynk controller",
+                    "affected version": "versions before 1.5.0"
+                }
+                ]
+        },
+        {
+            "Description": "A command injection issue was discovered in satel iberia sennet data logger and electricity meters: sennet optimal datalogger v5.37c-1.43c and prior, sennet solar datalogger v5.03-1.56a and prior, and sennet multitask meter v5.21a-1.18b and prior. successful exploitation of this vulnerability could result in the attacker breaking out of the jailed shell and gaining full access to the system.",
+            "CVE": "CVE-2017-6048",
+            "Vulnerability Type": "command injection",
+            "Vendor": "satel iberia",
+            "Affected Products": [
+                {
+                    "Product": "sennet multitask meters",
+                    "affected version": ""
+                },
+                {
+                    "Product": "sennet optimal datalogger",
+                    "affected version": "v5.37c-1.43c and prior"
+                },
+                {
+                    "Product": "sennet solar datalogger",
+                    "affected version": "v5.03-1.56a and prior"
+                },
+                 {
+                    "Product": " ennet multitask meter",
+                    "affected version": "v5.21a-1.18b and prior"
+                }
+
+            ]
+        },
+        {
+            "Description": "A stack-based buffer overflow issue was discovered in wecon technologies levi studio hmi editor before 1.8.1. this vulnerability causes a buffer overflow, which could result in denial of service when a malicious project file is run on the system.",
+            "CVE": "CVE-2017-6035",
+            "Vulnerability Type": "stack-based buffer overflow",
+            "Vendor": "wecon",
+            "Affected Products": [
+                {
+                    "Product": "levi studio hmi editor",
+                    "affected version": "before 1.8.1"
+                }
+            ]
+        },
+        {
+            "Description": "An improper limitation of a pathname to a restricted directory ('path traversal') vulnerability exists in iiot monitor 3.1.38 which could allow access to files available to system user.",
+            "CVE": "CVE-2018-7835",
+            "Vulnerability Type": "improper limitation of a pathname to a restricted directory ('path traversal')",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "iiot monitor",
+                    "affected version": "3.1.38"
+                }
+            ]
+        },
+        {
+            "Description": "An issue was discovered in advantech webaccess version 8.1. to be able to exploit the sql injection vulnerability, an attacker must supply malformed input to the webaccess software. successful attack could result in administrative access to the application and its data files.",
+            "CVE": "CVE-2017-5154",
+            "Vulnerability Type": "sql injection",
+            "Vendor": "advantech",
+            "Affected Products": [
+                {
+                    "Product": "webaccess",
+                    "affected version": "version 8.1"
+                }
+            ]
+        },
+
+        {
+            "Description": "In emerson ovation ocr400 controller 3.3.1 and earlier, a heap-based buffer overflow vulnerability in the embedded third-party ftp server involves improper handling of a long command to the ftp service, which may cause memory corruption that halts the controller or leads to remote code execution and escalation of privileges.",
+            "CVE": "CVE-2019-10965",
+            "Vulnerability Type": "heap-based buffer overflow",
+            "Vendor": "emerson",
+            "Affected Products": [
+                {
+                    "Product": "ovation ocr400 controller",
+                    "affected version": "3.3.1 and earlier"
+                }
+            ]
+        },
+
+        {
+            "Description": "Sql injection vulnerability in moxa softcms before 1.5 allows remote attackers to execute arbitrary sql commands via unspecified fields.",
+            "CVE": "CVE-2016-5792",
+            "Vulnerability Type": "sql injection",
+            "Vendor": "moxa",
+            "Affected Products": [
+                {
+                    "Product": "softcms",
+                    "affected version": "before 1.5"
+                }
+            ]
+        },
+        {
+            "Description": "Stack-based buffer overflow in hospira lifecare pca infusion system 5.0 and earlier, and possibly other versions, allows remote attackers to execute arbitrary code via unspecified vectors.",
+            "CVE": "CVE-2015-3955",
+            "Vulnerability Type": "stack-based buffer overflow",
+            "Vendor": "hospira",
+            "Affected Products": [
+                {
+                    "Product": "lifecare pca infusion system",
+                    "affected version": "5.0 and earlier"
+                }
+            ]
+        },
+        {
+            "Description": "A stack-based buffer overflow issue was discovered in wecon levi studio hmi editor v1.8.1 and prior. multiple stack-based buffer overflow vulnerabilities have been identified in which the application does not verify string size before copying to memory; the attacker may then be able to crash the application or run arbitrary code.",
+            "CVE": "CVE-2017-13999",
+            "Vulnerability Type": "stack-based buffer overflow",
+            "Vendor": "wecon",
+            "Affected Products": [
+                {
+                    "Product": "levi studio hmi editor",
+                    "affected version": "v1.8.1 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "Cross-site scripting (xss) vulnerability in cogent datahub 7.1.2 and earlier, cascade datahub 6.4.20 and earlier, and opc datahub 6.4.20 and earlier allows remote attackers to inject arbitrary web script or html via unspecified vectors.",
+            "CVE": "CVE-2012-0309",
+            "Vulnerability Type": "cross-site scripting",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "cascade datahub",
+                    "affected version": "6.4.20 and earlier"
+                },
+                {
+                    "Product": "cogent datahub",
+                    "affected version": "7.1.2 and earlier"
+                },
+                {
+                    "Product": "opc datahub",
+                    "affected version": "6.4.20 and earlier"
+                }
+            ]
+        },
+        {
+            "Description": "Webaccess/scada, version 8.3. an improper authentication vulnerability exists that could allow a possible authentication bypass allowing an attacker to upload malicious data.",
+            "CVE": "CVE-2019-6519",
+            "Vulnerability Type": "improper authentication",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "Webaccess/scada",
+                    "affected version": "version 8.3"
+                }
+            ]
+        },
+        {
+            "Description": "Advantech webaccess/scada, versions 8.3.5 and prior. an improper access control vulnerability may allow an attacker to cause a denial-of-service condition.",
+            "CVE": "CVE-2019-6554",
+            "Vulnerability Type": "improper access control",
+            "Vendor": "advantech",
+            "Affected Products": [
+                {
+                    "Product": "webaccess/scada",
+                    "affected version": "versions 8.3.5 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "In webaccess/scada, versions 8.3.5 and prior, multiple stack-based buffer overflow vulnerabilities are caused by a lack of proper validation of the length of user-supplied data. exploitation of these vulnerabilities may allow remote code execution.",
+            "CVE": "CVE-2019-10991",
+            "Vulnerability Type": "stack-based buffer overflow",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "webaccess/scada",
+                    "affected version": "versions 8.3.5 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "In advantech webaccess versions v8.2_20170817 and prior, webaccess versions v8.3.0 and prior, webaccess dashboard versions v.2.0.15 and prior, webaccess scada node versions prior to 8.3.1, and webaccess/nms 2.0.3 and prior, a heap-based buffer overflow vulnerability has been identified, which may allow an attacker to execute arbitrary code.",
+            "CVE": "CVE-2018-8845",
+            "Vulnerability Type": "heap-based buffer overflow",
+            "Vendor": "advantech",
+            "Affected Products": [
+                {
+                    "Product": "webaccess",
+                    "affected version": "versions v8.2_20170817 and prior"
+                },
+                {
+                    "Product": "webaccess dashboard",
+                    "affected version": "versions v.2.0.15 and prior"
+                },
+                {
+                    "Product": "webaccess scada node",
+                    "affected version": "versions prior to 8.3.1"
+                },
+                {
+                    "Product": "webaccess",
+                    "affected version": "versions v8.3.0 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "The siemens web application ruggedcom nms < v1.2 on port 8080/tcp and 8081/tcp could allow a remote attacker to perform a cross-site request forgery (csrf) attack, potentially allowing an attacker to execute administrative operations, provided the targeted user has an active session and is induced to trigger a malicious request.",
+            "CVE": "CVE-2017-2682",
+            "Vulnerability Type": "cross-site request forgery (csrf)",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "web application ruggedcom nms",
+                    "affected version": "< v1.2"
+                }
+            ]
+        },
+        {
+            "Description": "An issue was discovered in kabona ab webdatorcentral (wdc) application prior to version 3.4.0. the web server url inputs are not sanitized correctly, which may allow cross-site scripting vulnerabilities.",
+            "CVE": "CVE-2016-8356",
+            "Vulnerability Type": "cross-site scripting",
+            "Vendor": "kabona ab",
+            "Affected Products": [
+                {
+                    "Product": "webdatorcentral",
+                    "affected version": "prior to version 3.4.0"
+                }
+            ]
+        },
+        {
+            "Description": "Fuji electric v-server 4.0.3.0 and prior, multiple untrusted pointer dereference vulnerabilities have been identified, which may allow remote code execution.",
+            "CVE": "CVE-2018-14811",
+            "Vulnerability Type": "pointer dereference",
+            "Vendor": "fuji electric",
+            "Affected Products": [
+                {
+                    "Product": "v-server",
+                    "affected version": "4.0.3.0 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "Fuji electric v-server 4.0.3.0 and prior, a heap-based buffer overflow vulnerability has been identified, which may allow remote code execution.",
+            "CVE": "CVE-2018-14813",
+            "Vulnerability Type": "buffer overflow",
+            "Vendor": "fuji electric",
+            "Affected Products": [
+                {
+                    "Product": "v-server",
+                    "affected version": "4.0.3.0 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "Laquis scada versions 4.1.0.3870 and prior has several out-of-bounds read vulnerabilities, which may allow remote code execution.",
+            "CVE": "CVE-2018-17895",
+            "Vulnerability Type": "out-of-bounds read",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "laquis scada",
+                    "affected version": "versions 4.1.0.3870 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "Sql injection vulnerability in ecava integraxor before 5.0 build 4522 allows remote attackers to execute arbitrary sql commands via unspecified vectors.",
+            "CVE": "CVE-2016-2299",
+            "Vulnerability Type": "sql injection",
+            "Vendor": "ecava",
+            "Affected Products": [
+                {
+                    "Product": "integraxor",
+                    "affected version": "before 5.0 build 4522"
+                }
+            ]
+        },
+        {
+            "Description": "Cross-site scripting (xss) vulnerability in ecava integraxor before 5.0 build 4522 allows remote attackers to inject arbitrary web script or html via a crafted url.",
+            "CVE": "CVE-2016-2305",
+            "Vulnerability Type": "cross-site scripting",
+            "Vendor": "ecava",
+            "Affected Products": [
+                {
+                    "Product": "integraxor",
+                    "affected version": "before 5.0 build 4522"
+                }
+            ]
+        },
+        {
+            "Description": "Several use after free vulnerabilities have been identified in cx-supervisor (versions 3.42 and prior). when processing project files, the application fails to check if it is referencing freed memory. an attacker could use a specially crafted project file to exploit and execute code under the privileges of the application.",
+            "CVE": "CVE-2018-19017",
+            "Vulnerability Type": "use after free",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "cx-supervisor",
+                    "affected version": "versions 3.42 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "The ftp server on siemens scalance x-300 switches with firmware before 4.0 and scalance x 408 switches with firmware before 4.0 allows remote authenticated users to cause a denial of service (reboot) via crafted ftp packets.",
+            "CVE": "CVE-2014-8479",
+            "Vulnerability Type": "denial of service",
+            "Vendor": "siemens",
+            "Affected Products": [
+                {
+                    "Product": "scalance x 408 switches",
+                    "affected version": "with firmware before 4.0"
+                },
+                {
+                    "Product": "scalance x-300 switches",
+                    "affected version": "with firmware before 4.0"
+                }
+            ]
+        },
+        {
+            "Description": "A cwe-787: out-of-bounds write vulnerability exists in interactive graphical scada system (igss), version 14 and prior, which could cause a software crash when data in the mdb database is manipulated.",
+            "CVE": "CVE-2019-6827",
+            "Vulnerability Type": "out-of-bounds write",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "interactive graphical scada system",
+                    "affected version": "version 14 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "Advantech webaccess 8.3.1 and earlier has a .dll component that is susceptible to external control of file name or path vulnerability, which may allow an arbitrary file deletion when processing.",
+            "CVE": "CVE-2018-14820",
+            "Vulnerability Type": "external control of file name or path",
+            "Vendor": "advantech",
+            "Affected Products": [
+                {
+                    "Product": "webaccess",
+                    "affected version": "8.3.1 and earlier"
+                }
+            ]
+        },
+        {
+            "Description": "Cross-site scripting (xss) vulnerability in the schneider electric powerlogic pm8ecc module before 2.651 for powermeter 800 devices allows remote attackers to inject arbitrary web script or html via unspecified vectors.",
+            "CVE": "CVE-2016-4513",
+            "Vulnerability Type": "cross-site scripting",
+            "Vendor": "schneider electric",
+            "Affected Products": [
+                {
+                    "Product": "powerlogic pm8ecc",
+                    "affected version": "before 2.651"
+                },
+                {
+                    "Product": "powermeter 800 devices",
+                    "affected version": ""
+                }
+            ]
+        },
+        {
+            "Description": "In emerson ovation ocr400 controller 3.3.1 and earlier, a stack-based buffer overflow vulnerability in the embedded third-party ftp server involves improper handling of a long file name from the list command to the ftp service, which may cause the service to overwrite buffers, leading to remote code execution and escalation of privileges.",
+            "CVE": "CVE-2019-10967",
+            "Vulnerability Type": "stack-based buffer overflow",
+            "Vendor": "emerson",
+            "Affected Products": [
+                {
+                    "Product": "ovation ocr400 controller",
+                    "affected version": "3.3.1 and earlier"
+                }
+            ]
+        },
+        {
+            "Description": "An issue was discovered in wecon technology levi studio hmi editor v1.8.29 and prior. a specially-crafted malicious file may be able to cause a heap-based buffer overflow vulnerability when opened by a user.",
+            "CVE": "CVE-2017-16737",
+            "Vulnerability Type": "heap-based buffer overflow",
+            "Vendor": "wecon",
+            "Affected Products": [
+                {
+                    "Product": "levi studio hmi editor",
+                    "affected version": "v1.8.29 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "Several heap-based buffer overflow vulnerabilities in wecon levistudiou version 1.8.56 and prior have been identified, which may allow arbitrary code execution. mat powell, ziad badawi, and natnael samson working with trend micro's zero day initiative, reported these vulnerabilities to nccic.",
+            "CVE": "CVE-2019-6539",
+            "Vulnerability Type": "heap-based buffer overflow",
+            "Vendor": "wecon",
+            "Affected Products": [
+                {
+                    "Product": "levistudiou",
+                    "affected version": "version 1.8.56 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "Cross-site scripting (xss) vulnerability in inductive automation ignition 7.7.2 allows remote attackers to inject arbitrary web script or html via unspecified vectors.",
+            "CVE": "CVE-2015-0976",
+            "Vulnerability Type": "cross-site scripting (xss)",
+            "Vendor": "inductive automation",
+            "Affected Products": [
+                {
+                    "Product": "ignition",
+                    "affected version": "7.7.2"
+                }
+            ]
+        },
+        {
+            "Description": "Fuji electric v-server 4.0.3.0 and prior, several out-of-bounds write vulnerabilities have been identified, which may allow remote code execution.",
+            "CVE": "CVE-2018-14815",
+            "Vulnerability Type": "out-of-bounds write",
+            "Vendor": "fuji electric",
+            "Affected Products": [
+                {
+                    "Product": "v-server",
+                    "affected version": "4.0.3.0 and prior"
+                },
+                {
+                    "Product": "",
+                    "affected version": ""
+                }
+            ]
+        },
+        {
+            "Description": "An information exposure issue was discovered in saia burgess controls pcd controllers with pcd firmware versions prior to 1.28.16 or 1.24.69. in certain circumstances, the device pads ethernet frames with memory contents.",
+            "CVE": "CVE-2017-9628",
+            "Vulnerability Type": "information exposure",
+            "Vendor": "saia burgess controls",
+            "Affected Products": [
+                {
+                    "Product": "pcd controllers",
+                      "affected version":""
+                },
+                {
+                    "Product": "pcd firmware",
+                    "affected version": "versions prior to 1.28.16 or 1.24.69"
+                }
+            ]
+        },
+        {
+            "Description": "Multiple cross-site scripting (xss) vulnerabilities in schneider electric struxureware scada expert clearscada 2010 r3 through 2014 r1 allow remote authenticated users to inject arbitrary web script or html via unspecified vectors.",
+            "CVE": "CVE-2014-5411",
+            "Vulnerability Type": "cross-site scripting",
+            "Vendor": "schneider electric",
+            "Affected Products": [
+                {
+                    "Product": "scada expert clearscada",
+                    "affected version": "2010 r3 through 2014 r1"
+                }
+            ]
+        },
+        {
+            "Description": "In advantech webaccess versions v8.2_20170817 and prior, webaccess versions v8.3.0 and prior, webaccess dashboard versions v.2.0.15 and prior, webaccess scada node versions prior to 8.3.1, and webaccess/nms 2.0.3 and prior, an external control of file name or path vulnerability has been identified, which may allow an attacker to delete files.",
+            "CVE": "CVE-2018-7495",
+            "Vulnerability Type": "external control of file name or path",
+            "Vendor": "advantech",
+            "Affected Products": [
+                {
+                    "Product": "webaccess",
+                    "affected version": "versions v8.2_20170817 and prior"
+                },
+                {
+                    "Product": "webaccess dashboard",
+                    "affected version": "versions v.2.0.15 and prior"
+                },
+                {
+                    "Product": "webaccess scada",
+                    "affected version": "versions prior to 8.3.1"
+                },
+                {
+                    "Product": "webaccess/nms",
+                    "affected version": "2.0.3 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "An improper restriction of xml external entity reference ('xxe') vulnerability exists on numerous methods of the iiot monitor 3.1.38 software that could allow the software to resolve documents outside of the intended sphere of control, causing the software to embed incorrect documents into its output and expose restricted information.",
+            "CVE": "CVE-2018-7837",
+            "Vulnerability Type": "improper restriction of xml external entity reference ('xxe')",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "iiot monitor ",
+                    "affected version": "3.1.38"
+                }
+            ]
+        },
+        {
+            "Description": "Delta electronics cncsoft screeneditor, versions 1.00.89 and prior. multiple heap-based buffer overflow vulnerabilities may be exploited by processing specially crafted project files, allowing an attacker to remotely execute arbitrary code. there is a lack of user input validation before copying data from project files onto the heap.",
+            "CVE": "CVE-2019-10982",
+            "Vulnerability Type": "heap-based buffer overflow",
+            "Vendor": "delta electronics",
+            "Affected Products": [
+                {
+                    "Product": "cncsoft screeneditor",
+                    "affected version": "versions 1.00.89 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "An authentication bypass by capture-replay issue was discovered in schneider electric modicon modbus protocol. sensitive information is transmitted in cleartext in the modicon modbus protocol, which may allow an attacker to replay the following commands: run, stop, upload, and download.",
+            "CVE": "CVE-2017-6034",
+            "Vulnerability Type": "authentication bypass by capture-replay",
+            "Vendor": "schneider electric",
+            "Affected Products": [
+                {
+                    "Product": "modicon modbus protocol",
+                    "affected version": ""
+                }
+            ]
+        },
+        {
+            "Description": "Cross-site scripting (xss) vulnerability in the integrated web server in siemens sinema remote connect server before 1.2 allows remote attackers to inject arbitrary web script or html via a crafted url.",
+            "CVE": "CVE-2016-6204",
+            "Vulnerability Type": "cross-site scripting",
+            "Vendor": "siemens",
+            "Affected Products": [
+                {
+                    "Product": "sinema remote connect server",
+                    "affected version": "before 1.2 "
+                }
+            ]
+        },
+        {
+            "Description": "The application (network configurator for devicenet safety 3.41 and prior) searches for resources by means of an untrusted search path that could execute a malicious .dll file not under the application's direct control and outside the intended directories.",
+            "CVE": "CVE-2019-10971",
+            "Vulnerability Type": "untrusted search path",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "network configurator for devicenet safety",
+                    "affected version": "3.41 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "The ftp server on siemens scalance x-300 switches with firmware before 4.0 and scalance x 408 switches with firmware before 4.0 allows remote authenticated users to cause a denial of service (reboot) via crafted ftp packets.",
+            "CVE": "CVE-2014-8479",
+            "Vulnerability Type": "denial of service",
+            "Vendor": "siemens",
+            "Affected Products": [
+                {
+                    "Product": "scalance x-300",
+                    "affected version": " before 4.0"
+                },
+                {
+                    "Product": "scalance x 408 ",
+                    "affected version": "before 4.0"
+                }
+            ]
+        },
+        {
+            "Description": "Multiple stack-based buffer overflow vulnerabilities in wecon levistudiou version 1.8.56 and prior may be exploited when parsing strings within project files. the process does not properly validate the length of user-supplied data prior to copying it to a fixed-length stack-based buffer. an attacker can leverage these vulnerabilities to execute code under the context of the current process. mat powell, ziad badawi, and natnael samson working with trend micro's zero day initiative, reported these vulnerabilities to nccic.",
+            "CVE": "CVE-2019-6537",
+            "Vulnerability Type": "stack-based buffer overflow",
+            "Vendor": "wecon",
+            "Affected Products": [
+                {
+                    "Product": "levistudiou",
+                    "affected version": "version 1.8.56"
+                }
+            ]
+        },
+        {
+            "Description": "Two stack-based buffer overflow vulnerabilities have been discovered in cx-one versions 4.42 and prior (cx-programmer versions 9.66 and prior and cx-server versions 5.0.23 and prior). when processing project files, the application allows input data to exceed the buffer. an attacker could use a specially crafted project file to overflow the buffer and execute code under the privileges of the application.",
+            "CVE": "CVE-2018-18993",
+            "Vulnerability Type": "stack-based buffer overflow",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "cx-one",
+                    "affected version": "versions 4.42 and prior"
+                },
+                {
+                    "Product": "cx-programmer",
+                    "affected version": "versions 9.66 and prior"
+                },
+                {
+                    "Product": "cx-server",
+                    "affected version": "versions 5.0.23 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "In webaccess/scada versions 8.3.5 and prior, an out-of-bounds read vulnerability is caused by a lack of proper validation of user-supplied data. exploitation of this vulnerability may allow disclosure of information.",
+            "CVE": "CVE-2019-10983",
+            "Vulnerability Type": "out-of-bounds read",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "webaccess/scada",
+                    "affected version": "versions 8.3.5 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "An improper authentication issue was discovered in ininet solutions ininet webserver, all versions prior to v2.02.0100. the webserver does not properly authenticate users, which may allow a malicious attacker to access sensitive information such as hmi pages or modify plc variables.",
+            "CVE": "CVE-2017-13995",
+            "Vulnerability Type": "improper authentication",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "ininet webserver",
+                    "affected version": "all versions prior to v2.02.0100"
+                }
+            ]
+        },
+        {
+            "Description": "Cross-site request forgery (csrf) vulnerability on janitza umg 508, 509, 511, 604, and 605 devices allows remote attackers to hijack the authentication of arbitrary users.",
+            "CVE": "CVE-2015-3967",
+            "Vulnerability Type": "cross-site request forgery",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "janitza umg 508, 509, 511, 604, and 605",
+                    "affected version": ""
+                }
+            ]
+        },
+        {
+            "Description": "Open redirect vulnerability in the integrated web server on siemens simatic s7-1200 cpu devices with firmware before 4.1 allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via unspecified vectors.",
+            "CVE": "CVE-2015-1048",
+            "Vulnerability Type": "open redirect",
+            "Vendor": "siemens",
+            "Affected Products": [
+                {
+                    "Product": "simatic s7-1200 cpu devices with firmware",
+                    "affected version": "before 4.1"
+                }
+            ]
+        },
+        {
+            "Description": "An issue was discovered in delta electronics wplsoft, versions prior to v2.42.11, ispsoft, versions prior to 3.02.11, and pmsoft, versions prior to 2.10.10. multiple instances of out-of-bounds write conditions may allow malicious files to be read and executed by the affected software.",
+            "CVE": "CVE-2016-5802",
+            "Vulnerability Type": "out-of-bounds write",
+            "Vendor": "delta electronics",
+            "Affected Products": [
+                {
+                    "Product": "ispsoft",
+                    "affected version": "versions prior to 3.02.11"
+                },
+                {
+                    "Product": "pmsoft",
+                    "affected version": "versions prior to 2.10.10"
+                },
+                {
+                    "Product": "wplsoft",
+                    "affected version": "versions prior to v2.42.11"
+                }
+            ]
+        },
+        {
+            "Description": "The web server on siemens scalance x-300 switches with firmware before 4.0 and scalance x 408 switches with firmware before 4.0 allows remote attackers to cause a denial of service (reboot) via malformed http requests.",
+            "CVE": "CVE-2014-8478",
+            "Vulnerability Type": "denial of service",
+            "Vendor": "siemens",
+            "Affected Products": [
+                {
+                    "Product": "scalance x-300 switches with firmware",
+                    "affected version": " before 4.0"
+                },
+                {
+                    "Product": "scalance x 408 switches with firmware",
+                    "affected version": "before 4.0"
+                }
+            ]
+        },
+        {
+            "Description": "In webaccess/scada versions 8.3.5 and prior, multiple heap-based buffer overflow vulnerabilities are caused by a lack of proper validation of the length of user-supplied data. exploitation of these vulnerabilities may allow remote code execution. note: a different vulnerability than cve-2019-10991.",
+            "CVE": "CVE-2019-10989",
+            "Vulnerability Type": "heap-based buffer overflow",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "webaccess/scada",
+                    "affected version": "versions 8.3.5 and prior,"
+                }
+            ]
+        },
+        {
+            "Description": "Heap-based buffer overflow in elcsoft.exe in eaton elcsoft 2.4.01 and earlier allows remote authenticated users to execute arbitrary code via a crafted file.",
+            "CVE": "CVE-2016-4509",
+            "Vulnerability Type": "heap-based buffer overflow",
+            "Vendor": "eaton",
+            "Affected Products": [
+                {
+                    "Product": "elcsoft",
+                    "affected version": "2.4.01 and earlier"
+                }
+            ]
+        },
+        {
+            "Description": "An authentication bypass by spoofing issue was discovered in lava ether-serial link (esl) running firmware versions 6.01.00/29.03.2007 and prior versions. an improper authentication vulnerability has been identified, which, if exploited, would allow an attacker with the same ip address to bypass authentication by accessing a specific uniform resource locator.",
+            "CVE": "CVE-2017-14003",
+            "Vulnerability Type": "authentication bypass by spoofing",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "ether-serial link running firmware",
+                    "affected version": "versions 6.01.00/29.03.2007 and prior versions"
+                }
+            ]
+        },
+        {
+            "Description": "A stack-based buffer overflow issue was discovered in wecon levi studio hmi editor v1.8.1 and prior. multiple stack-based buffer overflow vulnerabilities have been identified in which the application does not verify string size before copying to memory; the attacker may then be able to crash the application or run arbitrary code.",
+            "CVE": "CVE-2017-13999",
+            "Vulnerability Type": "stack-based buffer overflow",
+            "Vendor": "wecon",
+            "Affected Products": [
+                {
+                    "Product": "levi studio hmi editor",
+                    "affected version": "v1.8.1 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "Fuji electric v-server 4.0.3.0 and prior, an integer underflow vulnerability has been identified, which may allow remote code execution.",
+            "CVE": "CVE-2018-14817",
+            "Vulnerability Type": "underflow",
+            "Vendor": "fuji electric",
+            "Affected Products": [
+                {
+                    "Product": "v-server",
+                    "affected version": "4.0.3.0 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "Sql injection vulnerability in rockwell automation factorytalk energymetrix before 2.20.00 allows remote attackers to execute arbitrary sql commands via unspecified vectors.",
+            "CVE": "CVE-2016-4522",
+            "Vulnerability Type": "sql injection",
+            "Vendor": "rockwell automation",
+            "Affected Products": [
+                {
+                    "Product": "energymetrix",
+                    "affected version": "before 2.20.00"
+                }
+            ]
+        },
+        {
+            "Description": "Stack-based buffer overflow on allen-bradley micrologix 1100 devices before b frn 15.000 and 1400 devices through b frn 15.003 allows remote attackers to execute arbitrary code via unspecified vectors.",
+            "CVE": "CVE-2015-6490",
+            "Vulnerability Type": "stack-based buffer overflow",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "allen-bradley micrologix 1100",
+                    "affected version": "before b frn 15.000"
+                },
+                {
+                    "Product": "1400 devices",
+                    "affected version": "through b frn 15.003"
+                }
+            ]
+        },
+        {
+            "Description": "A insufficient verification of data authenticity (cwe-345) vulnerability exists in the modicon m221, all versions, which could cause a change of ipv4 configuration (ip address, mask and gateway) when remotely connected to the device.",
+            "CVE": "CVE-2018-7798",
+            "Vulnerability Type": "insufficient verification of data authenticity",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "modicon m221",
+                    "affected version": "all versions,"
+                }
+            ]
+        },
+        {
+            "Description": "Laquis scada versions 4.1.0.3870 and prior has several stack-based buffer overflow vulnerabilities, which may allow remote code execution.",
+            "CVE": "CVE-2018-17911",
+            "Vulnerability Type": "stack-based buffer overflow",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "laquis scada",
+                    "affected version": "versions 4.1.0.3870 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "Sql injection vulnerability in infinite automation mango automation 2.5.x and 2.6.x before 2.6.0 build 430 allows remote authenticated users to execute arbitrary sql commands via unspecified vectors.",
+            "CVE": "CVE-2015-7903",
+            "Vulnerability Type": "sql injection",
+            "Vendor": "infinite automation",
+            "Affected Products": [
+                {
+                    "Product": "mango automation",
+                    "affected version": "2.5.x and 2.6.x before 2.6.0 build 430"
+                }
+            ]
+        },
+        {
+            "Description": "A file inclusion vulnerability exists in the confd.exe module in honeywell experion pks r40x before r400.6, r41x before r410.6, and r43x before r430.2, which could lead to accepting an arbitrary file into the function, and potential information disclosure or remote code execution. honeywell strongly encourages and recommends all customers running unsupported versions of ekps prior to r400 to upgrade to a supported version.",
+            "CVE": "CVE-2014-9186",
+            "Vulnerability Type": "file inclusion",
+            "Vendor": "honeywell",
+            "Affected Products": [
+                {
+                    "Product": "experion pks r40x",
+                    "affected version": "before r400.6"
+                },
+                {
+                    "Product": "r41X",
+                    "affected version": "before r410.6"
+                },
+                {
+                    "Product": "r43x",
+                    "affected version": "before r430.2"
+                }
+            ]
+        },
+        {
+            "Description": "Abb panel builder 800 all versions has an improper input validation vulnerability which may allow an attacker to insert and run arbitrary code on a computer where the affected product is used.",
+            "CVE": "CVE-2018-10616",
+            "Vulnerability Type": "improper input validation",
+            "Vendor": "abb",
+            "Affected Products": [
+                {
+                    "Product": "panel builder 800",
+                    "affected version": "all versions"
+                }
+            ]
+        },
+        {
+            "Description": "An improper input validation issue was discovered in nari pcs-9611 relay. an improper input validation vulnerability has been identified that affects a service within the software that may allow a remote attacker to arbitrarily read/access system resources and affect the availability of the system.",
+            "CVE": "CVE-2018-5447",
+            "Vulnerability Type": "improper input validation",
+            "Vendor": "nari",
+            "Affected Products": [
+                {
+                    "Product": "pcs-9611",
+                    "affected version": ""
+                }
+            ]
+        },
+        {
+            "Description": "Ge multilink ml800, ml1200, ml1600, and ml2400 switches with firmware  and multilink ml810, ml3000, and ml3100 switches with firmware 5.2.0 and earlier allow remote attackers to cause a denial of service (resource consumption or reboot) via crafted packets.",
+            "CVE": "CVE-2014-5418",
+            "Vulnerability Type": "resource consumption",
+            "Vendor": "Ge",
+            "Affected Products": [
+                {
+                    "Product": "multilink ml800, ml1200, ml1600, and ml2400 switches",
+                    "affected version": "with firmware 4.2.1 and earlier"
+                },
+                {
+                    "Product": "ultilink ml810, ml3000, and ml3100 switches",
+                    "affected version": "with firmware 5.2.0 and earlier "
+                }
+            ]
+        },
+        {
+            "Description": "Stack-based buffer overflow in pro-face gp-pro ex ex-ed before 4.05.000, pfxexedv before 4.05.000, pfxexedls before 4.05.000, and pfxexgrpls before 4.05.000 allows remote attackers to execute arbitrary code via unspecified vectors.",
+            "CVE": "CVE-2016-2292",
+            "Vulnerability Type": "stack-based buffer overflow",
+            "Vendor": "pro-face",
+            "Affected Products": [
+                {
+                    "Product": " pro-face gp-pro ex ex-ed",
+                    "affected version": "before 4.05.000"
+                },
+                {
+                    "Product": "pfxexedv",
+                    "affected version": "before 4.05.000"
+                },
+                {
+                    "Product": "pfxexedls",
+                    "affected version": "before 4.05.000"
+                },
+                {
+                    "Product": "pfxexgrpls ",
+                    "affected version": " before 4.05.000"
+                }
+            ]
+        },
+        {
+            "Description": "In delta electronics automation tpeditor version 1.89 or prior, parsing a malformed program file may cause heap-based buffer overflow vulnerability, which may allow remote code execution.",
+            "CVE": "CVE-2018-8871",
+            "Vulnerability Type": "heap-based buffer overflow",
+            "Vendor": "delta electronics",
+            "Affected Products": [
+                {
+                    "Product": "tpeditor",
+                    "affected version": "version 1.89 or prior"
+                }
+            ]
+        },
+        {
+            "Description": "Cross-site scripting (xss) vulnerability in sauter ey-ws505f0x0 moduweb vision before 1.6.0 allows remote authenticated users to inject arbitrary web script or html via a crafted query.",
+            "CVE": "CVE-2015-7916",
+            "Vulnerability Type": "cross-site scripting",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "moduweb vision",
+                    "affected version": "before 1.6.0"
+                }
+            ]
+        },
+        {
+            "Description": "An issue was discovered in ibhsoftec s7-softplc prior to 4.12b. object memory can read a network packet that is larger than the space that is available, a heap-based buffer overflow.",
+            "CVE": "CVE-2016-8364",
+            "Vulnerability Type": "heap-based buffer overflow",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "s7-softplc",
+                    "affected version": "prior to 4.12b"
+                }
+            ]
+        },
+        {
+            "Description": "Stack-based buffer overflow in hospira lifecare pca infusion system 5.0 and earlier, and possibly other versions, allows remote attackers to execute arbitrary code via unspecified vectors.",
+            "CVE": "CVE-2015-3955",
+            "Vulnerability Type": "stack-based buffer overflow",
+            "Vendor": "hospira",
+            "Affected Products": [
+                {
+                    "Product": "lifecare pca infusion system",
+                    "affected version": "5.0 and earlier"
+                },
+                {
+                    "Product": "",
+                    "affected version": ""
+                }
+            ]
+        },
+        {
+            "Description": "An issue was discovered in fatek automation pm designer v3 version 2.1.2.2, and automation fv designer version 1.2.8.0. by sending additional valid packets, an attacker could trigger a stack-based buffer overflow and cause a crash. also, a malicious attacker can trigger a remote buffer overflow on the fatek communication server.",
+            "CVE": "CVE-2016-5798",
+            "Vulnerability Type": "stack-based buffer overflow",
+            "Vendor": "fatek",
+            "Affected Products": [
+                {
+                    "Product": "automation fv designer",
+                    "affected version": "version 1.2.8.0"
+                },
+                {
+                    "Product": "automation pm designer v3",
+                    "affected version": "version 2.1.2.2"
+                }
+            ]
+        },
+        {
+            "Description": "Rockwell automation arena versions 15.10.00 and prior contains a use after free vulnerability caused by processing specially crafted arena simulation software files that may cause the software application to crash, potentially losing any unsaved data..",
+            "CVE": "CVE-2018-8843",
+            "Vulnerability Type": "use after free",
+            "Vendor": "rockwell automation",
+            "Affected Products": [
+                {
+                    "Product": "arena",
+                    "affected version": "versions 15.10.00"
+                }
+            ]
+        },
+        {
+            "Description": "Sql injection vulnerability in the login screen in the web navigator in siemens wincc before 7.2 update 1, as used in simatic pcs7 8.0 sp1 and earlier and other products, allows remote attackers to execute arbitrary sql commands via unspecified vectors.",
+            "CVE": "CVE-2013-3957",
+            "Vulnerability Type": "sql injection",
+            "Vendor": "siemens",
+            "Affected Products": [
+                {
+                    "Product": "simatic pcs7",
+                    "affected version": "8.0 sp1 and earlier "
+                },
+                {
+                    "Product": "wincc",
+                    "affected version": "before 7.2 update 1"
+                }
+            ]
+        },
+        {
+            "Description": "A vulnerability has been identified in simatic s7-1200 cpu family version 4 (all versions < v4.2.3). the web interface could allow a cross-site request forgery (csrf) attack if an unsuspecting user is tricked into accessing a malicious link. successful exploitation requires user interaction by a legitimate user, who must be authenticated to the web interface. a successful attack could allow an attacker to trigger actions via the web interface that the legitimate user is allowed to perform. this could allow the attacker to read or modify parts of the device configuration.",
+            "CVE": "CVE-2018-13800",
+            "Vulnerability Type": "cross-site request forgery (csrf)",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "simatic s7-1200 cpu family",
+                    "affected version": "version 4 (all versions < v4.2.3)"
+                }
+            ]
+        },
+        {
+            "Description": "Fuji electric frenic loader v3.3 v7.3.4.1a of frenic-mini (c1), frenic-mini (c2), frenic-eco, frenic-multi, frenic-mega, frenic-ace. a buffer over-read vulnerability may allow remote code execution on the device.",
+            "CVE": "CVE-2018-14790",
+            "Vulnerability Type": "buffer over-read",
+            "Vendor": "fuji electric",
+            "Affected Products": [
+                {
+                    "Product": "frenic-ace",
+                    "affected version": ""
+                },
+                   {
+                    "Product": "frenic-mega",
+                    "affected version": ""
+                },
+                   {
+                    "Product": "frenic-multi",
+                    "affected version": ""
+                },
+                   {
+                    "Product": "frenic-mini (c2)",
+                    "affected version": ""
+                },
+                {
+                    "Product": "frenic-mini (c1)",
+                    "affected version": ""
+                },
+                {
+                    "Product": "frenic loader v3.3",
+                    "affected version": "v7.3.4.1a"
+                }
+            ]
+        },
+        {
+            "Description": "An incorrect default permissions issue was discovered in azeotech daqfactory versions prior to 17.1. local, non-administrative users may be able to replace or modify original application files with malicious ones.",
+            "CVE": "CVE-2017-12699",
+            "Vulnerability Type": "incorrect default permissions",
+            "Vendor": "azeotech",
+            "Affected Products": [
+                {
+                    "Product": "daqfactory",
+                    "affected version": "versions prior to 17.1"
+                }
+            ]
+        },
+        {
+            "Description": "An improper authentication issue was discovered in siemens simatic cp 44x-1 rna, all versions prior to 1.4.1. an unauthenticated remote attacker may be able to perform administrative actions on the communication process (cp) of the rna series module, if network access to port 102/tcp is available and the configuration file for the cp is stored on the rna's cpu.",
+            "CVE": "CVE-2017-6868",
+            "Vulnerability Type": "improper authentication",
+            "Vendor": "siemens",
+            "Affected Products": [
+                {
+                    "Product": "simatic cp 44x-1 rna",
+                    "affected version": "all versions prior to 1.4.1"
+                }
+            ]
+        },
+        {
+            "Description": "Heap-based buffer overflow vulnerabilities in advantech webaccess hmi designer 2.1.7.32 and prior caused by processing specially crafted .pm3 files may allow remote code execution.",
+            "CVE": "CVE-2018-8833",
+            "Vulnerability Type": "heap-based buffer overflow",
+            "Vendor": "advantech",
+            "Affected Products": [
+                {
+                    "Product": "webaccess hmi designer",
+                    "affected version": "2.1.7.32 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "An information exposure issue was discovered in abb netcadops web application version 3.4 and prior, netcadops web application version 7.1 and prior, netcadops web application version 7.2x and prior, netcadops web application version 8.0 and prior, and netcadops web application version 8.1 and prior. a vulnerability exists in the password entry section of netcadops web application that may expose critical database information.",
+            "CVE": "CVE-2018-5477",
+            "Vulnerability Type": "information exposure",
+            "Vendor": "abb",
+            "Affected Products": [
+                {
+                    "Product": "netcadops web application",
+                    "affected version": "version 3.4 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "In spidercontrol microbrowser windows xp, vista 7, 8 and 10, versions 1.6.30.144 and prior, an uncontrolled search path element vulnerability has been identified which could be exploited by placing a specially crafted dll file in the search path.  if the malicious dll is loaded prior to the valid dll, an attacker could execute arbitrary code on the system.",
+            "CVE": "CVE-2017-14010",
+            "Vulnerability Type": "uncontrolled search path element",
+            "Vendor": "spidercontrol",
+            "Affected Products": [
+                {
+                    "Product": "windows xp,vista 7, 8 and 10",
+                    "affected version": "versions 1.6.30.144 and prior"
+                }
+
+            ]
+        },
+        {
+            "Description": "Sql injection vulnerability in moxa softcms before 1.5 allows remote attackers to execute arbitrary sql commands via unspecified fields.",
+            "CVE": "CVE-2016-5792",
+            "Vulnerability Type": "sql injection",
+            "Vendor": "moxa",
+            "Affected Products": [
+                {
+                    "Product": "softcms",
+                    "affected version": "before 1.5"
+                }
+            ]
+        },
+        {
+            "Description": "Sql injection vulnerability in news pages in cargotec navis webaccess before 2016-08-10 allows remote attackers to execute arbitrary sql commands via unspecified vectors.",
+            "CVE": "CVE-2016-5817",
+            "Vulnerability Type": "sql injection",
+            "Vendor": "navis",
+            "Affected Products": [
+                {
+                    "Product": "webaccess",
+                    "affected version": ""
+                }
+            ]
+        },
+        {
+            "Description": "Stack-based buffer overflow in bkfsim_vhfd.exe in yokogawa centum cs 1000, centum cs 3000 r3.09.50 and earlier, centum vp r5.03.20 and earlier, exaopc r3.72.00 and earlier, b/m9000cs r5.05.01 and earlier, and b/m9000 vp r7.03.01 and earlier, when fcs/test function is enabled, allows remote attackers to execute arbitrary code via a crafted packet.",
+            "CVE": "CVE-2014-3888",
+            "Vulnerability Type": "buffer overflow",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "exaopc",
+                    "affected version": "r3.72.00 and earlier"
+                }
+            ]
+        },
+        {
+            "Description": "A security misconfiguration vulnerability exists in schneider electric's igss scada software versions 12 and prior. security configuration settings such as address space layout randomization (aslr) and data execution prevention (dep) were not properly configured resulting in weak security.",
+            "CVE": "CVE-2017-9967",
+            "Vulnerability Type": "security misconfiguration",
+            "Vendor": "schneider electric",
+            "Affected Products": [
+                {
+                    "Product": "",
+                    "affected version": "versions 12 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "A directory traversal vulnerability exists in the confd.exe module in honeywell experion pks r40x before r400.6, r41x before r410.6, and r43x before r430.2, which could lead to possible information disclosure. honeywell strongly encourages and recommends all customers running unsupported versions of ekps prior to r400 to upgrade to a supported version.",
+            "CVE": "CVE-2014-5436",
+            "Vulnerability Type": "directory traversal",
+            "Vendor": "honeywell",
+            "Affected Products": [
+                {
+                    "Product": "experion pks r40x",
+                    "affected version": "before r400.6"
+                },
+                 {
+                    "Product": " r41x",
+                    "affected version": "before r410.6"
+                },
+                 {
+                    "Product": " r43x",
+                    "affected version": "before r430.2"
+                }
+            ]
+        },
+        {
+            "Description": "Multiple stack-based buffer overflows in advantech webaccess before 7.2 allow remote attackers to execute arbitrary code via a long string in the (1) projectname, (2) setparameter, (3) nodename, (4) ccdparameter, (5) setcolor, (6) alarmimage, (7) getparameter, (8) getcolor, (9) serverresponse, (10) setbaud, or (11) ipaddress parameter to an activex control in (a) webvact.ocx, (b) dvs.ocx, or (c) webdact.ocx.",
+            "CVE": "CVE-2014-2364",
+            "Vulnerability Type": "stack-based buffer overflows",
+            "Vendor": "advantech",
+            "Affected Products": [
+                {
+                    "Product": "advantech webaccess",
+                    "affected version": "before 7.2"
+                }
+            ]
+        },
+        {
+            "Description": "A sql injection issue was discovered in ecava integraxor versions 5.2.1231.0 and prior. the application fails to properly validate user input, which may allow for an unauthenticated attacker to remotely execute arbitrary code in the form of sql queries.",
+            "CVE": "CVE-2017-6050",
+            "Vulnerability Type": "sql injection",
+            "Vendor": "ecava",
+            "Affected Products": [
+                {
+                    "Product": "integraxor",
+                    "affected version": "versions 5.2.1231.0 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "A stack-based buffer overflow issue was discovered in schneider electric wonderware archestra logger, versions 2017.426.2307.1 and prior. the stack-based buffer overflow vulnerability has been identified, which may allow a remote attacker to execute arbitrary code in the context of a highly privileged account.",
+            "CVE": "CVE-2017-9629",
+            "Vulnerability Type": "stack-based buffer overflow",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "wonderware archestra logger",
+                    "affected version": "versions 2017.426.2307.1 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "Stack-based buffer overflow in advantech webaccess, formerly broadwin webaccess, before 8.0 allows remote attackers to execute arbitrary code via a crafted ip_address parameter in an html document.",
+            "CVE": "CVE-2014-8388",
+            "Vulnerability Type": "stack-based buffer overflow",
+            "Vendor": "advantech",
+            "Affected Products": [
+                {
+                    "Product": "webaccess",
+                    "affected version": "before 8.0"
+                }
+            ]
+        },
+        {
+            "Description": "An information exposure issue was discovered in osisoft pi vision versions 2017 and prior. the server response header and referrer-policy response header each provide unintended information disclosure.",
+            "CVE": "CVE-2018-7496",
+            "Vulnerability Type": "information exposure",
+            "Vendor": "osisoft",
+            "Affected Products": [
+                {
+                    "Product": "pi vision",
+                    "affected version": "versions 2017 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "An uncontrolled resource consumption issue was discovered in schneider electric wonderware archestra logger, versions 2017.426.2307.1 and prior. the uncontrolled resource consumption vulnerability could allow an attacker to exhaust the memory resources of the machine, causing a denial of service.",
+            "CVE": "CVE-2017-9627",
+            "Vulnerability Type": "uncontrolled resource consumption",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "wonderware archestra logger",
+                    "affected version": "versions 2017.426.2307.1 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "An issue was discovered in fatek automation plc ethernet module. the affected ether_cfg software configuration tool runs on the following fatek plcs: cbeh versions prior to v3.6 build 170215, cbe versions prior to v3.6 build 170215, cm55e versions prior to v3.6 build 170215, and cm25e versions prior to v3.6 build 170215. a stack-based buffer overflow vulnerability has been identified, which may allow remote code execution or crash the affected device.",
+            "CVE": "CVE-2017-6023",
+            "Vulnerability Type": "stack-based buffer overflow",
+            "Vendor": "fatek",
+            "Affected Products": [
+                {
+                    "Product": "plc ethernet module",
+                    "affected version": ""
+                },
+                {
+                    "Product": "cbeh",
+                    "affected version": "prior to v3.6 build 170215"
+                },
+                {
+                    "Product": "cbe",
+                    "affected version": "versions prior to v3.6 build 170215"
+                },
+                {
+                    "Product": "cm25e",
+                    "affected version": "versions prior to v3.6 build 170215"
+                }
+            ]
+        },
+        {
+            "Description": "An improper input validation issue was discovered in abb fox515t release 1.0. an improper input validation vulnerability has been identified, allowing a local attacker to provide a malicious parameter to the script that is not validated by the application, this could enable the attacker to retrieve any file on the server.",
+            "CVE": "CVE-2017-14025",
+            "Vulnerability Type": "improper input validation",
+            "Vendor": "abb",
+            "Affected Products": [
+                {
+                    "Product": "fox515t",
+                    "affected version": "release 1.0"
+                }
+            ]
+        },
+        {
+            "Description": "Heap-based buffer overflow in pro-face gp-pro ex ex-ed before 4.05.000, pfxexedv before 4.05.000, pfxexedls before 4.05.000, and pfxexgrpls before 4.05.000 allows remote attackers to execute arbitrary code via unspecified vectors.",
+            "CVE": "CVE-2016-2290",
+            "Vulnerability Type": "heap-based buffer overflow",
+            "Vendor": "pro-face",
+            "Affected Products": [
+                {
+                    "Product": "gp-pro ex ex-ed",
+                    "affected version": "before 4.05.000"
+                },
+                {
+                    "Product": "pfxexedv",
+                    "affected version": "4.05.000"
+                },
+                {
+                    "Product": "pfxexedls",
+                    "affected version": "before 4.05.000"
+                },
+                {
+                    "Product": "pfxexgrpls",
+                    "affected version": "before 4.05.000"
+                }
+            ]
+        },
+        {
+            "Description": "Heap-based buffer overflow in microsys promotic before 8.3.11 allows remote authenticated users to cause a denial of service via a malformed html document.",
+            "CVE": "CVE-2016-0869",
+            "Vulnerability Type": "heap-based buffer overflow",
+            "Vendor": "microsys",
+            "Affected Products": [
+                {
+                    "Product": "promotic",
+                    "affected version": "before 8.3.11"
+                }
+            ]
+        },
+        {
+            "Description": "An improper authentication issue was discovered in johnson & johnson ethicon endo-surgery generator gen11, all versions released before november 29, 2017. the security authentication mechanism used between the ethicon endo-surgery generator gen11 and single-patient use products can be bypassed, allowing for unauthorized devices to be connected to the generator, which could result in a loss of integrity or availability.",
+            "CVE": "CVE-2017-14018",
+            "Vulnerability Type": "improper authentication",
+            "Vendor": "ethicon",
+            "Affected Products": [
+                {
+                    "Product": "endo-surgery generator gen11",
+                    "affected version": "all versions released before november 29, 2017"
+                }
+            ]
+        },
+        {
+            "Description": "The siemens web application ruggedcom nms < v1.2 on port 8080/tcp and 8081/tcp could allow a remote attacker to perform a cross-site request forgery (csrf) attack, potentially allowing an attacker to execute administrative operations, provided the targeted user has an active session and is induced to trigger a malicious request.",
+            "CVE": "CVE-2017-2682",
+            "Vulnerability Type": "cross-site request forgery (csrf)",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "ruggedcom nms",
+                    "affected version": "< v1.2"
+                }
+            ]
+        },
+        {
+            "Description": "A stack-based buffer overflow issue was discovered in schneider electric indusoft web studio v8.0 sp2 patch 1 and prior versions, and intouch machine edition v8.0 sp2 patch 1 and prior versions. the stack-based buffer overflow vulnerability has been identified, which may allow remote code execution with high privileges.",
+            "CVE": "CVE-2017-14024",
+            "Vulnerability Type": "stack-based buffer overflow",
+            "Vendor": "indusoft",
+            "Affected Products": [
+                {
+                    "Product": "web studio",
+                    "affected version": "v8.0 sp2 patch 1 and prior versions"
+                },
+                {
+                    "Product": "intouch machine edition",
+                    "affected version": "v8.0 sp2 patch 1 and prior versions"
+                }
+            ]
+        },
+        {
+            "Description": "A heap-based buffer overflow issue was discovered in advantech webop. a maliciously crafted project file may be able to trigger a heap-based buffer overflow, which may crash the process and allow an attacker to execute arbitrary code.",
+            "CVE": "CVE-2017-12705",
+            "Vulnerability Type": "heap-based buffer overflow",
+            "Vendor": "advantech",
+            "Affected Products": [
+                {
+                    "Product": "webop",
+                    "affected version": ""
+                }
+            ]
+        },
+        {
+            "Description": "The wap interface in trihedral vtscada (formerly vts) 8.x through 11.x before 11.2.02 allows remote attackers to cause a denial of service (out-of-bounds read and application crash) via unspecified vectors.",
+            "CVE": "CVE-2016-4523",
+            "Vulnerability Type": "out-of-bounds read",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "vtscada",
+                    "affected version": "8.x through 11.x before 11.2.02"
+                }
+            ]
+        },
+        {
+            "Description": "An improper authentication issue was discovered in newport xps-cx and xps-qx. an attacker may bypass authentication by accessing a specific uniform resource locator (url).",
+            "CVE": "CVE-2017-7919",
+            "Vulnerability Type": "improper authentication",
+            "Vendor": "newport",
+            "Affected Products": [
+                {
+                    "Product": "xps-cx",
+                    "affected version": ""
+                },
+                {
+                    "Product": "xps-qx",
+                    "affected version": ""
+                }
+            ]
+        },
+        {
+            "Description": "An exploitable denial-of-service vulnerability exists in the unserialization of lists functionality of natus xltek neuroworks 8. a specially crafted network packet can cause an out-of-bounds read, resulting in a denial of service. an attacker can send a malicious packet to trigger this vulnerability.",
+            "CVE": "CVE-2017-2852",
+            "Vulnerability Type": "out-of-bounds read",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "xltek neuroworks",
+                    "affected version": "8"
+                }
+            ]
+        },
+        {
+            "Description": "A stack-based buffer overflow issue was discovered in ge d60 line distance relay devices running firmware version 7.11 and prior. multiple stack-based buffer overflow vulnerabilities have been identified, which may allow remote code execution.",
+            "CVE": "CVE-2018-5475",
+            "Vulnerability Type": "stack-based buffer overflow",
+            "Vendor": "ge",
+            "Affected Products": [
+                {
+                    "Product": "d60 line distance relay devices running firmware",
+                    "affected version": " version 7.11 and prior"
+                }
+            ]
+        },
+
+        {
+            "Description": "A use of hard-coded password issue was discovered in phoenix broadband poweragent sc3 bms, all versions prior to v6.87. use of a hard-coded password may allow unauthorized access to the device.",
+            "CVE": "CVE-2017-6039",
+            "Vulnerability Type": "use of hard-coded password",
+            "Vendor": "phoenix broadband",
+            "Affected Products": [
+                {
+                    "Product": "poweragent sc3 bms",
+                    "affected version": "all versions prior to v6.87"
+                }
+            ]
+        },
+        {
+            "Description": "An uncontrolled search path element issue was discovered in solar controls wattconfig m software version 2.5.10.1 and prior. an uncontrolled search path element has been identified, which could allow an attacker to execute arbitrary code on a target system using a malicious dll file.",
+            "CVE": "CVE-2017-9648",
+            "Vulnerability Type": "uncontrolled search path element",
+            "Vendor": "solar controls",
+            "Affected Products": [
+                {
+                    "Product": "wattconfig m",
+                    "affected version": "version 2.5.10.1 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "A memory corruption vulnerability has been identified in wecon levistudiou version 1.8.56 and prior, which may allow arbitrary code execution. mat powell, ziad badawi, and natnael samson working with trend micro's zero day initiative, reported these vulnerabilities to nccic.",
+            "CVE": "CVE-2019-6541",
+            "Vulnerability Type": "memory corruption",
+            "Vendor": "wecon",
+            "Affected Products": [
+                {
+                    "Product": "levistudiou",
+                    "affected version": "version 1.8.56 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "A deserialization of untrusted data issue was discovered in osisoft pi data archive versions 2017 and prior. unauthenticated users may modify deserialized data to send custom requests that crash the server.",
+            "CVE": "CVE-2018-7529",
+            "Vulnerability Type": "deserialization of untrusted data",
+            "Vendor": "osisoft",
+            "Affected Products": [ {
+                    "Product": " pi data archive",
+                    "affected version": "versions 2017 and prior"
+                }]
+        },
+        {
+            "Description": "In webaccess/scada, versions 8.3.5 and prior, multiple stack-based buffer overflow vulnerabilities are caused by a lack of proper validation of the length of user-supplied data. exploitation of these vulnerabilities may allow remote code execution.",
+            "CVE": "CVE-2019-10991",
+            "Vulnerability Type": "stack-based buffer overflow",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "webaccess/scada",
+                    "affected version": "versions 8.3.5 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "Stack-based buffer overflow in an unspecified dll file in a dtm development kit in schneider electric unity pro, somachine, somove, somove lite, modbus communication library 2.2.6 and earlier, canopen communication library 1.0.2 and earlier, ethernet/ip communication library 1.0.0 and earlier, em x80 gateway dtm (mb tcp/sl), advantys dtm for otb, advantys dtm for stb, kinos dtm, solo dtm, and xantrex dtms allows remote attackers to execute arbitrary code via unspecified vectors.",
+            "CVE": "CVE-2014-9200",
+            "Vulnerability Type": "stack-based buffer overflow",
+            "Vendor": "schneider electric",
+            "Affected Products": [
+                {
+                    "Product": "somachine",
+                    "affected version": ""
+                },
+                 {
+                    "Product": "unity pro",
+                    "affected version": ""
+                },
+                {
+                    "Product": "somove",
+                    "affected version": ""
+                },
+                {
+                    "Product": "somove lite",
+                    "affected version": ""
+                },
+                {
+                    "Product": "modbus communication library",
+                    "affected version": "2.2.6 and earlier"
+                },
+                  {
+                    "Product": "canopen communication library",
+                    "affected version": " 1.0.2 and earlier"
+                },
+                {
+                    "Product": "ethernet/ip communication library",
+                    "affected version": "  1.0.0 and earlier"
+                },
+                 {
+                    "Product": "em x80 gateway dtm (mb tcp/sl)",
+                    "affected version": "  1.0.0 and earlier"
+                },
+                  {
+                    "Product": "advantys dtm for otb",
+                    "affected version": ""
+                },
+                {
+                    "Product": "advantys dtm for stb",
+                    "affected version": ""
+                },
+                {
+                    "Product": "kinos dtm",
+                    "affected version": ""
+                },
+                {
+                    "Product": "solo dtm",
+                    "affected version": ""
+                },{
+                    "Product": ",xantrex dtms",
+                    "affected version": ""
+                }
+            ]
+        },
+          {
+            "Description": "A heap-based buffer overflow exists in the third-party product gigasoft, v5 and prior, included in ge communicator 3.15 and prior. a malicious html file that loads the activex controls can trigger the vulnerability via unchecked function calls.",
+            "CVE": "CVE-2017-7908",
+            "Vulnerability Type": "heap-based buffer overflow",
+            "Vendor": "ge",
+            "Affected Products": [
+                {
+                    "Product": "gigasoft",
+                    "affected version": "v5 and prior"
+                },
+                {
+                    "Product": "ge communicator",
+                    "affected version": "3.15 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "An issue was discovered in advantech webaccess version 8.1. to be able to exploit the sql injection vulnerability, an attacker must supply malformed input to the webaccess software. successful attack could result in administrative access to the application and its data files.",
+            "CVE": "CVE-2017-5154",
+            "Vulnerability Type": "sql injection",
+            "Vendor": "advantech",
+            "Affected Products": [
+                {
+                    "Product": "webaccess",
+                    "affected version": "version 8.1"
+                }
+            ]
+        },
+        {
+            "Description": "In emerson ovation ocr400 controller 3.3.1 and earlier, a heap-based buffer overflow vulnerability in the embedded third-party ftp server involves improper handling of a long command to the ftp service, which may cause memory corruption that halts the controller or leads to remote code execution and escalation of privileges.",
+            "CVE": "CVE-2019-10965",
+            "Vulnerability Type": "heap-based buffer overflow",
+            "Vendor": "emerson",
+            "Affected Products": [
+                {
+                    "Product": "ovation ocr400 controller ",
+                    "affected version": " 3.3.1 and earlier"
+                }
+            ]
+        },
+        {
+            "Description": "Netcomm wireless g lte light industrial m2m router (nwl-25) with firmware 2.0.29.11 and prior. a cross-site request forgery condition can occur, allowing an attacker to change passwords of the device remotely.",
+            "CVE": "CVE-2018-14783",
+            "Vulnerability Type": "cross-site request forgery",
+            "Vendor": "netcomm wireless",
+            "Affected Products": [
+                {
+                    "Product": "g lte light industrial m2m router (nwl-25)",
+                    "affected version": "with firmware 2.0.29.11 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "A use of client-side authentication issue was discovered in advantech b+b smartworx mesr901 firmware versions 1.5.2 and prior. the web interface uses javascript to check client authentication and redirect unauthorized users. attackers may intercept requests and bypass authentication to access restricted web pages.",
+            "CVE": "CVE-2017-7909",
+            "Vulnerability Type": "use of client-side authentication",
+            "Vendor": "advantech b+b smartworx",
+            "Affected Products": [
+                {
+                    "Product": "mesr901 firmware",
+                    "affected version": "versions 1.5.2 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "Prima systems flexair, versions 2.3.38 and prior. the application allows improper authentication using the md5 hash value of the password, which may allow an attacker with access to the database to login as admin without decrypting the password.",
+            "CVE": "CVE-2019-7666",
+            "Vulnerability Type": "improper authentication",
+            "Vendor": "prima systems",
+            "Affected Products": [
+                {
+                    "Product": "flexair",
+                    "affected version": "versions 2.3.38 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "Cscape, version 9.80.75.3 sp3 and prior. an improper input validation vulnerability has been identified that may be exploited by processing specially crafted poc files lacking user input validation. this may allow an attacker to read confidential information and remotely execute arbitrary code.",
+            "CVE": "CVE-2018-19005",
+            "Vulnerability Type": "improper input validation",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "cscape",
+                    "affected version": "version 9.80.75.3 sp3 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "An issue was discovered in belden hirschmann gecko lite managed switch, version 2.0.00 and prior versions. after an administrator downloads a configuration file, a copy of the configuration file, which includes hashes of user passwords, is saved to a location that is accessible without authentication by path traversal.",
+            "CVE": "CVE-2017-5163",
+            "Vulnerability Type": "path traversal",
+            "Vendor": "belden",
+            "Affected Products": [
+                {
+                    "Product": "gecko lite managed switch",
+                    "affected version": "version 2.0.00 and prior versions"
+                }
+                ]
+        },
+        {
+            "Description": "Laquis scada versions 4.1.0.3870 and prior has several integer overflow to buffer overflow vulnerabilities, which may allow remote code execution.",
+            "CVE": "CVE-2018-17897",
+            "Vulnerability Type": "integer overflow to buffer overflow",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "laquis scada",
+                    "affected version": "versions 4.1.0.3870 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "In tasy emr, tasy webportal versions 3.02.1757 and prior, there is an information exposure vulnerability which may allow a remote attacker to access system and configuration information.",
+            "CVE": "CVE-2019-13557",
+            "Vulnerability Type": "information exposure",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "tasy emr",
+                    "affected version": ""
+                },
+                {
+                    "Product": "tasy webportal",
+                    "affected version": "versions 3.02.1757 and prior"
+                }
+            ]
+        },
+        {
+            "Description": "Delta industrial automation cncsoft, cncsoft screeneditor version 1.00.88 and prior. multiple heap-based buffer overflow vulnerabilities may be exploited by processing specially crafted project files, allowing an attacker to remotely execute arbitrary code. there is a lack of user input validation before copying data from project files onto the heap.",
+            "CVE": "CVE-2019-10951",
+            "Vulnerability Type": "heap-based buffer overflow",
+            "Vendor": "",
+            "Affected Products": [
+                {
+                    "Product": "cncsoft screeneditor",
+                    "affected version": "version 1.00.88 and prior"
+                }
+            ]
+        }
+    ]
+}

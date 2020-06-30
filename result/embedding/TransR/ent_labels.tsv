@@ -1,0 +1,197 @@
+(AV:N/AC:L/AU:N/C:N/I:N/A:P)
+(AV:N/AC:L/AU:N/C:N/I:P/A:N)
+(AV:N/AC:L/AU:N/C:P/I:N/A:C)
+(AV:N/AC:L/AU:N/C:P/I:N/A:N)
+(AV:N/AC:L/AU:N/C:P/I:P/A:P)
+(AV:N/AC:L/AU:S/C:C/I:C/A:C)
+(AV:N/AC:L/AU:S/C:P/I:N/A:N)
+(AV:N/AC:M/AU:N/C:C/I:C/A:C)
+(AV:N/AC:M/AU:N/C:N/I:P/A:N)
+(AV:N/AC:M/AU:N/C:P/I:P/A:P)
+10.0
+4.0
+4.3
+5.0
+6.1
+6.5
+6.8
+7.5
+7.8
+8.5
+8.8
+9.0
+9.1
+9.3
+9.6
+9.8
+A cross-site request forgery has been identified, which may allow for the execution of unauthorized actions on the device.
+A specially-crafted packet may be able to cause an out-of-bounds read, which may result in a denial-of-service condition.
+A specially-crafted packet may cause an out-of-bounds read, which may result in a denial-of-service condition.
+A specially-crafted packet received during the execution of certain commands can cause memory to be overwritten in a way that could allow an attacker to take control of the program.
+A specially-crafted packet takes advantage of the way the program parses data structures and may cause a buffer overflow, which may allow remote execution of arbitrary code.
+AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H
+AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N
+AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Affected Version
+An attacker may cause a buffer overflow by sending a specially-crafted packet to the affected product while the product attempts to open a file requested by the client.
+An attacker may create an application user account to gain administrative privileges.
+An error in the way the program parses data structures may allow an attacker to take control of the system by sending it a specially-crafted packet.
+An uncontrolled search path element has been identified, which could allow an attacker to execute arbitrary code on a target system using a malicious dll file.
+CVE-2016-0861
+CVE-2016-0862
+CVE-2017-12733
+CVE-2017-2852
+CVE-2017-2853
+CVE-2017-2858
+CVE-2017-2860
+CVE-2017-2861
+CVE-2017-2867
+CVE-2017-2868
+CVE-2017-2869
+CVE-2017-9646
+CVE-2019-6520
+CVE-2019-6522
+CVE-2019-6524
+CVE-2019-6526
+CVE-2019-6557
+CVE-2019-6561
+CVE-2019-6565
+CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N
+CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H
+CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N
+CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
+CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+CWE-120
+CWE-121
+CWE-125
+CWE-284
+CWE-306
+CWE-307
+CWE-311
+CWE-312
+CWE-352
+CWE-427
+CWE-77
+CWE-79
+Cory duplantis from cisco talos
+Device does not perform strict input validation, which may allow an authenticated user to execute any system commands on the system.
+Failure to properly check array bounds may allow an attacker to read device memory on arbitrary addresses, which may allow an attacker to retrieve sensitive data or cause device reboot.
+File contains sensitive account information stored in cleartext.
+Ivan b, sergey fedonin, and vyacheslav moskvin of positive technologies security
+Karn ganeshen
+Opw
+Product
+Several buffer overflow vulnerabilities have been identified, which may allow remote code execution.
+The device does not properly check authority on server side, which results in a read-only user being able to perform arbitrary configuration changes.
+The device fails to properly validate user input, giving unauthenticated and authenticated attackers the ability to perform xss attacks, which may be used to send a malicious script.
+The devices do not implement sufficient measures to prevent multiple failed authentication attempts, which may allow an attacker to discover passwords via brute force attack.
+The devices use plaintext transmission of sensitive data, which may allow an attacker to capture sensitive data such as an administrative password.
+Vendor
+Vulnerability Type
+https://www.us-cert.gov/ics/advisories/ICSA-16-033-02
+https://www.us-cert.gov/ics/advisories/ICSA-17-222-02
+https://www.us-cert.gov/ics/advisories/ICSA-17-243-04
+https://www.us-cert.gov/ics/advisories/ICSA-19-057-01
+https://www.us-cert.gov/ics/advisories/ICSMA-18-165-01
+inf0
+inf1
+inf10
+inf11
+inf12
+inf13
+inf14
+inf15
+inf16
+inf17
+inf18
+inf19
+inf2
+inf20
+inf21
+inf22
+inf23
+inf24
+inf25
+inf26
+inf27
+inf28
+inf29
+inf3
+inf30
+inf31
+inf32
+inf33
+inf34
+inf35
+inf36
+inf37
+inf38
+inf39
+inf4
+inf40
+inf41
+inf42
+inf43
+inf44
+inf45
+inf46
+inf47
+inf48
+inf49
+inf5
+inf50
+inf51
+inf52
+inf53
+inf54
+inf55
+inf56
+inf57
+inf58
+inf59
+inf6
+inf60
+inf61
+inf62
+inf63
+inf64
+inf65
+inf66
+inf67
+inf68
+inf69
+inf7
+inf70
+inf71
+inf72
+inf73
+inf8
+inf9
+vul0
+vul1
+vul10
+vul11
+vul12
+vul13
+vul14
+vul15
+vul16
+vul17
+vul18
+vul2
+vul3
+vul4
+vul5
+vul6
+vul7
+vul8
+vul9

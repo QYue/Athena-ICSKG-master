@@ -1,0 +1,589 @@
+API / Function Errors - (1228),0,6991228,Weaknesses in this category are related to the use of built-in functions or external APIs.,0
+Use of Inherently Dangerous Function - (242),1,6991228242,The program calls a function that can never be guaranteed to work safely.,6991228
+Use of Function with Inconsistent Implementations - (474),2,6991228474,The code uses a function that has inconsistent implementations across operating systems and versions.,6991228
+Undefined Behavior for Input to API - (475),3,6991228475,The behavior of this function is undefined unless its control parameter is set to a specific value.,6991228
+Use of Obsolete Function - (477),4,6991228477,"The code uses deprecated or obsolete functions, which suggests that the code has not been actively reviewed or maintained.",6991228
+Use of Potentially Dangerous Function - (676),5,6991228676,"The program invokes a potentially dangerous function that could introduce a vulnerability if it is used incorrectly, but the function can also be used safely.",6991228
+Use of Low-Level Functionality - (695),6,6991228695,The software uses low-level functionality that is explicitly prohibited by the framework or specification under which the software is supposed to operate.,6991228
+Exposed Dangerous Method or Function - (749),7,6991228749,"The software provides an Applications Programming Interface (API) or similar interface for interaction with external actors, but the interface includes a dangerous method or function that is not properly restricted.",6991228
+Audit / Logging Errors - (1210),8,6991210,Weaknesses in this category are related to audit-based components of a software system. Frequently these deal with logging user activities in order to identify undesired access and modifications to the system. The weaknesses in this category could lead to a degradation of the quality of the audit capability if they are not addressed.,0
+Improper Output Neutralization for Logs - (117),9,6991210117,The software does not neutralize or incorrectly neutralizes output that is written to logs.,6991210
+Truncation of Security-relevant Information - (222),10,6991210222,"The application truncates the display, recording, or processing of security-relevant information in a way that can obscure the source or nature of an attack.",6991210
+Omission of Security-relevant Information - (223),11,6991210223,"The application does not record or display information that would be important for identifying the source or nature of an attack, or determining if an action is safe.",6991210
+Obscured Security-relevant Information by Alternate Name - (224),12,6991210224,"The software records security-relevant information according to an alternate name of the affected entity, instead of the canonical name.",6991210
+Insertion of Sensitive Information into Log File - (532),13,6991210532,Information written to log files can be of a sensitive nature and give valuable guidance to an attacker or expose sensitive user information.,6991210
+Insufficient Logging - (778),14,6991210778,"When a security-critical event occurs, the software either does not record the event or omits important details about the event when logging it.",6991210
+Logging of Excessive Data - (779),15,6991210779,"The software logs too much information, making log files hard to process and possibly hindering recovery efforts or forensic analysis after an attack.",6991210
+Authentication Errors - (1211),16,6991211,"Weaknesses in this category are related to authentication components of a system. Frequently these deal with the ability to verify that an entity is indeed who it claims to be. If not addressed when designing or implementing a software system, these weaknesses could lead to a degradation of the quality of the authentication capability.",0
+Authentication Bypass Using an Alternate Path or Channel - (288),17,6991211288,"A product requires authentication, but the product has an alternate path or channel that does not require authentication.",6991211
+Authentication Bypass by Spoofing - (290),18,6991211290,This attack-focused weakness is caused by improperly implemented authentication schemes that are subject to spoofing attacks.,6991211
+Authentication Bypass by Capture-replay - (294),19,6991211294,A capture-replay flaw exists when the design of the software makes it possible for a malicious user to sniff network traffic and bypass authentication by replaying it to the server in question to the same effect as the original message (or with minor changes).,6991211
+Improper Certificate Validation - (295),20,6991211295,"The software does not validate, or incorrectly validates, a certificate.",6991211
+Improper Following of a Certificate's Chain of Trust - (296),21,6991211296,"The software does not follow, or incorrectly follows, the chain of trust for a certificate back to a trusted root certificate, resulting in incorrect trust of any resource that is associated with that certificate.",6991211
+Improper Check for Certificate Revocation - (299),22,6991211299,"The software does not check or incorrectly checks the revocation status of a certificate, which may cause it to use a certificate that has been compromised.",6991211
+Incorrect Implementation of Authentication Algorithm - (303),23,6991211303,"The requirements for the software dictate the use of an established authentication algorithm, but the implementation of the algorithm is incorrect.",6991211
+Missing Critical Step in Authentication - (304),24,6991211304,"The software implements an authentication technique, but it skips a step that weakens the technique.",6991211
+Authentication Bypass by Primary Weakness - (305),25,6991211305,"The authentication algorithm is sound, but the implemented mechanism can be bypassed as the result of a separate weakness that is primary to the authentication error.",6991211
+Missing Authentication for Critical Function - (306),26,6991211306,The software does not perform any authentication for functionality that requires a provable user identity or consumes a significant amount of resources.,6991211
+Improper Restriction of Excessive Authentication Attempts - (307),27,6991211307,"The software does not implement sufficient measures to prevent multiple failed authentication attempts within in a short time frame, making it more susceptible to brute force attacks.",6991211
+Use of Single-factor Authentication - (308),28,6991211308,The use of single-factor authentication can lead to unnecessary risk of compromise when compared with the benefits of a dual-factor authentication scheme.,6991211
+Use of Password System for Primary Authentication - (309),29,6991211309,"The use of password systems as the primary means of authentication may be subject to several flaws or shortcomings, each reducing the effectiveness of the mechanism.",6991211
+Key Exchange without Entity Authentication - (322),30,6991211322,The software performs a key exchange with an actor without verifying the identity of that actor.,6991211
+Use of Client-Side Authentication - (603),31,6991211603,"A client/server product performs authentication within client code but not in server code, allowing server-side authentication to be bypassed via a modified client that omits the authentication check.",6991211
+Overly Restrictive Account Lockout Mechanism - (645),32,6991211645,"The software contains an account lockout protection mechanism, but the mechanism is too restrictive and can be triggered too easily, which allows attackers to deny service to legitimate users by causing their accounts to be locked out.",6991211
+Guessable CAPTCHA - (804),33,6991211804,"The software uses a CAPTCHA challenge, but the challenge can be guessed or automatically recognized by a non-human actor.",6991211
+Use of Password Hash Instead of Password for Authentication - (836),34,6991211836,"The software records password hashes in a data store, receives a hash of a password from a client, and compares the supplied hash to the hash obtained from the data store.",6991211
+Authorization Errors - (1212),35,6991212,"Weaknesses in this category are related to authorization components of a system. Frequently these deal with the ability to enforce that agents have the required permissions before performing certain operations, such as modifying data. If not addressed when designing or implementing a software system, these weaknesses could lead to a degradation of the quality of the authorization capability.",0
+Direct Request ('Forced Browsing') - (425),36,6991212425,"The web application does not adequately enforce appropriate authorization on all restricted URLs, scripts, or files.forced browsing",6991212
+Incorrect Behavior Order: Authorization Before Parsing and Canonicalization - (551),37,6991212551,"If a web server does not fully parse requested URLs before it examines them for authorization, it may be possible for an attacker to bypass authorization protection.",6991212
+Improper Authorization of Index Containing Sensitive Information - (612),38,6991212612,"The product creates a search index of private or sensitive documents, but it does not properly limit index access to actors who are authorized to see the original information.",6991212
+Authorization Bypass Through User-Controlled Key - (639),39,6991212639,The system's authorization functionality does not prevent one user from gaining access to another user's data or record by modifying the key value identifying the data.Insecure Direct Object Reference / IDORHorizontal Authorization,6991212
+Improper Authorization in Handler for Custom URL Scheme - (939),40,6991212939,"The software uses a handler for a custom URL scheme, but it does not properly restrict which actors can invoke the handler using the scheme.",6991212
+Placement of User into Incorrect Group - (842),41,6991212842,The software or the administrator places a user into an incorrect group.,6991212
+Insufficient Granularity of Access Control - (1220),42,69912121220,"The product implements access controls via a policy or other feature with the intention to disable or restrict accesses (reads and/or writes) to assets in a system from untrusted agents. However, implemented access controls lack required granularity, which renders the control policy too broad because it allows accesses from unauthorized agents to the security-sensitive assets.",6991212
+Bad Coding Practices - (1006),43,6991006,"Weaknesses in this category are related to coding practices that are deemed unsafe and increase the chances that an exploitable vulnerability will be present in the application. These weaknesses do not directly introduce a vulnerability, but indicate that the product has not been carefully developed or maintained. If a program is complex, difficult to maintain, not portable, or shows evidence of neglect, then there is a higher likelihood that weaknesses are buried in the code.",0
+Missing Default Case in Switch Statement - (478),44,6991006478,"The code does not have a default case in a switch statement, which might lead to complex logical errors and resultant weaknesses.",6991006
+Reliance on Package-level Scope - (487),45,6991006487,"Java packages are not inherently closed; therefore, relying on them for code security is not a good practice.",6991006
+Active Debug Code - (489),46,6991006489,"The application is deployed to unauthorized actors with debugging code still enabled or active, which can create unintended entry points or expose sensitive information.",6991006
+Suspicious Comment - (546),47,6991006546,"The code contains comments that suggest the presence of bugs, incomplete functionality, or weaknesses.",6991006
+"Use of Hard-coded, Security-relevant Constants - (547)",48,6991006547,"The program uses hard-coded constants instead of symbolic names for security-critical values, which increases the likelihood of mistakes during code maintenance or security policy change.",6991006
+Dead Code - (561),49,6991006561,"The software contains dead code, which can never be executed.",6991006
+Return of Stack Variable Address - (562),50,6991006562,"A function returns the address of a stack variable, which will cause unintended program behavior, typically in the form of a crash.",6991006
+Assignment to Variable without Use - (563),51,6991006563,"The variable's value is assigned but never used, making it a dead store.Unused Variable",6991006
+Object Model Violation: Just One of Equals and Hashcode Defined - (581),52,6991006581,The software does not maintain equal hashcodes for equal objects.,6991006
+Explicit Call to Finalize() - (586),53,6991006586,The software makes an explicit call to the finalize() method from outside the finalizer.,6991006
+Multiple Binds to the Same Port - (605),54,6991006605,"When multiple sockets are allowed to bind to the same port, other services on that port may be stolen or spoofed.",6991006
+Variable Extraction Error - (621),55,6991006621,"The product uses external input to determine the names of variables into which information is extracted, without verifying that the names of the specified variables are valid. This could cause the program to overwrite unintended variables.Variable overwrite",6991006
+Dynamic Variable Evaluation - (627),56,6991006627,"In a language where the user can influence the name of a variable at runtime, if the variable names are not controlled, an attacker can read or write to arbitrary variables, or access arbitrary functions.Dynamic evaluation",6991006
+Function Call with Incorrectly Specified Arguments - (628),57,6991006628,"The product calls a function, procedure, or routine with arguments that are not correctly specified, leading to always-incorrect behavior and resultant weaknesses.",6991006
+Use of Multiple Resources with Duplicate Identifier - (694),58,6991006694,"The software uses multiple resources that can have the same identifier, in a context in which unique identifiers are required.",6991006
+Use of Redundant Code - (1041),59,69910061041,"The software has multiple functions, methods, procedures, macros, etc. that
+					contain the same code.",6991006
+Data Element Aggregating an Excessively Large Number of Non-Primitive Elements - (1043),60,69910061043,"The software uses a data element that has an excessively large
+					number of sub-elements with non-primitive data types such as structures or aggregated objects.",6991006
+Architecture with Number of Horizontal Layers Outside of Expected Range - (1044),61,69910061044,"The software's architecture contains too many - or too few -
+					horizontal layers.",6991006
+Parent Class with a Virtual Destructor and a Child Class without a Virtual Destructor - (1045),62,69910061045,"A parent class has a virtual destructor method, but the parent has a child class that does not have a virtual destructor.",6991006
+Creation of Immutable Text Using String Concatenation - (1046),63,69910061046,The software creates an immutable text string using string concatenation operations.,6991006
+Invokable Control Element with Large Number of Outward Calls - (1048),64,69910061048,"The code contains callable control elements that
+         contain an excessively large number of references to other
+         application objects external to the context of the callable,
+         i.e. a Fan-Out value that is excessively large.",6991006
+Excessive Data Query Operations in a Large Data Table - (1049),65,69910061049,"The software performs a data query with a large number of joins
+					and sub-queries on a large data table.",6991006
+Excessive Platform Resource Consumption within a Loop - (1050),66,69910061050,"The software has a loop body or loop condition that contains a control element that directly or
+					indirectly consumes platform resources, e.g. messaging, sessions, locks, or file
+					descriptors.",6991006
+Creation of Class Instance within a Static Code Block - (1063),67,69910061063,A static code block creates an instance of a class.,6991006
+Runtime Resource Management Control Element in a Component Built to Run on Application Servers - (1065),68,69910061065,"The application uses deployed components from application servers, but it also uses low-level functions/methods for management of resources, instead of the API provided by the application server.",6991006
+Missing Serialization Control Element - (1066),69,69910061066,"The software contains a serializable data element that does not
+					have an associated serialization method.",6991006
+Excessive Execution of Sequential Searches of Data Resource - (1067),70,69910061067,"The software contains a data query against an SQL table or view
+					that is configured in a way that does not utilize an index and may cause
+					sequential searches to be performed.",6991006
+Serializable Data Element Containing non-Serializable Item Elements - (1070),71,69910061070,"The software contains a serializable, storable data element such as a field or member,
+					but the data element contains member elements that are not
+					serializable.",6991006
+Empty Code Block - (1071),72,69910061071,"The source code contains a block that does not contain any code, i.e., the block is empty.",6991006
+Data Resource Access without Use of Connection Pooling - (1072),73,69910061072,"The software accesses a data resource through a database without using a
+					connection pooling capability.",6991006
+Non-SQL Invokable Control Element with Excessive Number of Data Resource Accesses - (1073),74,69910061073,"The software contains a client with a function or method that contains a large number of data accesses/queries that are sent through a data manager, i.e., does not use efficient database capabilities.",6991006
+Parent Class without Virtual Destructor Method - (1079),75,69910061079,"A parent class contains one or more child classes, but the parent class does not have a virtual destructor method.",6991006
+Class Instance Self Destruction Control Element - (1082),76,69910061082,The code contains a class instance that calls the method or function to delete or destroy itself.,6991006
+Invokable Control Element with Excessive File or Data Access Operations - (1084),77,69910061084,"A function or method contains too many
+					operations that utilize a data manager or file resource.",6991006
+Invokable Control Element with Excessive Volume of Commented-out Code - (1085),78,69910061085,"A function, method, procedure, etc. contains an excessive amount of code that has been
+					commented out within its body.",6991006
+Class with Virtual Method without a Virtual Destructor - (1087),79,69910061087,"A class contains a virtual method, but the method does not have an associated virtual destructor.",6991006
+Large Data Table with Excessive Number of Indices - (1089),80,69910061089,"The software uses a large data table that contains an excessively large number of
+					indices.",6991006
+Use of Object without Invoking Destructor Method - (1091),81,69910061091,"The software contains a method that accesses an object but does not later invoke
+					the element's associated finalize/destructor method.",6991006
+Use of Same Invokable Control Element in Multiple Architectural Layers - (1092),82,69910061092,"The software uses the same control element across multiple
+					architectural layers.",6991006
+Excessive Index Range Scan for a Data Resource - (1094),83,69910061094,"The software contains an index range scan for a large data table,
+					but the scan can cover a large number of rows.",6991006
+Persistent Storable Data Element without Associated Comparison Control Element - (1097),84,69910061097,"The software uses a storable data element that does not have
+					all of the associated functions or methods that are necessary to support
+					comparison.",6991006
+Data Element containing Pointer Item without Proper Copy Control Element - (1098),85,69910061098,The code contains a data element with a pointer that does not have an associated copy or constructor method.,6991006
+Inconsistent Naming Conventions for Identifiers - (1099),86,69910061099,"The product's code, documentation, or other artifacts do not
+					consistently use the same naming conventions for variables, callables, groups of
+					related callables, I/O capabilities, data types, file names, or similar types of
+					elements.",6991006
+Reliance on Runtime Component in Generated Code - (1101),87,69910061101,"The product uses automatically-generated code that cannot be
+					executed without a specific runtime support component.",6991006
+Reliance on Machine-Dependent Data Representation - (1102),88,69910061102,"The code uses a data representation that relies on low-level
+					data representation or constructs that may vary across different processors,
+					physical machines, OSes, or other physical components.",6991006
+Use of Platform-Dependent Third Party Components - (1103),89,69910061103,"The product relies on third-party software components that do
+					not provide equivalent functionality across all desirable
+					platforms.",6991006
+Use of Unmaintained Third Party Components - (1104),90,69910061104,"The product relies on third-party components that are not
+					actively supported or maintained by the original developer or a trusted proxy
+					for the original developer.",6991006
+Insufficient Use of Symbolic Constants - (1106),91,69910061106,"The source code uses literal constants that may need to change
+					or evolve over time, instead of using symbolic constants.",6991006
+Insufficient Isolation of Symbolic Constant Definitions - (1107),92,69910061107,"The source code uses symbolic constants, but it does not
+					sufficiently place the definitions of these constants into a more centralized or
+					isolated location.",6991006
+Excessive Reliance on Global Variables - (1108),93,69910061108,"The code is structured in a way that relies too much on using
+					or setting global variables throughout various points in the code, instead of
+					preserving the associated information in a narrower, more local
+					context.",6991006
+Use of Same Variable for Multiple Purposes - (1109),94,69910061109,"The code contains a callable, block, or other code element in
+					which the same variable is used to control more than one unique task or store
+					more than one instance of data.",6991006
+Inappropriate Comment Style - (1113),95,69910061113,"The source code uses comment styles or formats that are
+					inconsistent or do not follow expected standards for the
+					product.",6991006
+Inappropriate Whitespace Style - (1114),96,69910061114,"The source code contains whitespace that is inconsistent across
+					the code or does not follow expected standards for the
+					product.",6991006
+Source Code Element without Standard Prologue - (1115),97,69910061115,"The source code contains elements such as source files 
+					that do not consistently provide a prologue or header that has been
+					standardized for the project.",6991006
+Inaccurate Comments - (1116),98,69910061116,"The source code contains comments that do not accurately
+					describe or explain aspects of the portion of the code with which the comment is
+					associated.",6991006
+Callable with Insufficient Behavioral Summary - (1117),99,69910061117,"The code contains a function or method whose signature and/or associated
+					inline documentation does not sufficiently describe the callable's inputs, outputs,
+					side effects, assumptions, or return codes.",6991006
+Declaration of Variable with Unnecessarily Wide Scope - (1126),100,69910061126,"The source code declares a variable in one scope, but the
+					variable is only used within a narrower scope.",6991006
+Compilation with Insufficient Warnings or Errors - (1127),101,69910061127,"The code is compiled without sufficient warnings enabled, which
+					may prevent the detection of subtle bugs or quality
+					issues.",6991006
+Incorrect Use of Autoboxing and Unboxing for Performance Critical Operations - (1235),102,69910061235,"The code uses boxed primitives, which may introduce inefficiencies into performance-critical operations.",6991006
+Behavioral Problems - (438),103,699438,Weaknesses in this category are related to unexpected behaviors from code that an application uses.,0
+Misinterpretation of Input - (115),104,699438115,"The software misinterprets an input, whether from an attacker or another product, in a security-relevant fashion.",699438
+Incorrect Behavior Order: Early Validation - (179),105,699438179,"The software validates input before applying protection mechanisms that modify the input, which could allow an attacker to bypass the validation via dangerous inputs that only arise after the modification.",699438
+Incorrect Behavior Order: Early Amplification - (408),106,699438408,The software allows an entity to perform a legitimate but expensive operation before authentication or authorization has taken place.,699438
+Incomplete Model of Endpoint Features - (437),107,699438437,"A product acts as an intermediary or monitor between two or more endpoints, but it does not have a complete model of an endpoint's features, behaviors, or state, potentially causing the product to perform incorrect actions based on this incomplete model.",699438
+Behavioral Change in New Version or Environment - (439),108,699438439,"A's behavior or functionality changes with a new version of A, or a new environment, which is not known (or manageable) by B.Functional change",699438
+Expected Behavior Violation - (440),109,699438440,"A feature, API, or function being used by a product behaves differently than the product expects.",699438
+Inconsistent Interpretation of HTTP Requests ('HTTP Request Smuggling') - (444),110,699438444,"When malformed or abnormal HTTP requests are interpreted by one or more entities in the data flow between the user and the web server, such as a proxy or firewall, they can be interpreted inconsistently, allowing the attacker to ""smuggle"" a request to one device without the other device being aware of it.",699438
+Use of Incorrect Operator - (480),111,699438480,"The programmer accidentally uses the wrong operator, which changes the application logic in security-relevant ways.",699438
+Incorrect Block Delimitation - (483),112,699438483,"The code does not explicitly delimit a block that is intended to contain 2 or more statements, creating a logic error.",699438
+Omitted Break Statement in Switch - (484),113,699438484,"The program omits a break statement within a switch or similar construct, causing code associated with multiple conditions to execute. This can cause problems when the programmer only intended to execute code associated with one condition.",699438
+Incorrect Behavior Order: Authorization Before Parsing and Canonicalization - (551),114,699438551,"If a web server does not fully parse requested URLs before it examines them for authorization, it may be possible for an attacker to bypass authorization protection.",699438
+Execution After Redirect (EAR) - (698),115,699438698,"The web application sends a redirect to another location, but instead of exiting, it executes additional code.Redirect Without Exit",699438
+Compiler Optimization Removal or Modification of Security-critical Code - (733),116,699438733,"The developer builds a security-critical protection mechanism into the software, but the compiler optimizes the program such that the mechanism is removed or modified.",699438
+Operator Precedence Logic Error - (783),117,699438783,The program uses an expression in which operator precedence causes incorrect logic to be used.,699438
+Loop with Unreachable Exit Condition ('Infinite Loop') - (835),118,699438835,"The program contains an iteration or loop with an exit condition that cannot be reached, i.e., an infinite loop.",699438
+"Improper Enforcement of a Single, Unique Action - (837)",119,699438837,"The software requires that an actor should only be able to perform an action once, or to have only one unique action, but the software does not enforce or improperly enforces this restriction.",699438
+Improper Enforcement of Behavioral Workflow - (841),120,699438841,"The software supports a session in which more than one behavior must be performed by an actor, but it does not properly ensure that the actor performs the behaviors in the required sequence.",699438
+Comparison Using Wrong Factors - (1025),121,6994381025,"The code performs a comparison between two entities, but the comparison examines the wrong factors or characteristics of the entities, which can lead to incorrect results and resultant weaknesses.",699438
+Processor Optimization Removal or Modification of Security-critical Code - (1037),122,6994381037,"The developer builds a security-critical protection mechanism into the software, but the processor optimizes the execution of the program such that the mechanism is removed or modified.",699438
+Business Logic Errors - (840),123,699840,"Weaknesses in this category identify some of the underlying problems that commonly allow attackers to manipulate the business logic of an application. Errors in business logic can be devastating to an entire application. They can be difficult to find automatically, since they typically involve legitimate use of the application's functionality. However, many business logic errors can exhibit patterns that are similar to well-understood implementation and design weaknesses.",0
+Unverified Ownership - (283),124,699840283,The software does not properly verify that a critical resource is owned by the proper entity.,699840
+Authentication Bypass Using an Alternate Path or Channel - (288),125,699840288,"A product requires authentication, but the product has an alternate path or channel that does not require authentication.",699840
+Authorization Bypass Through User-Controlled Key - (639),126,699840639,The system's authorization functionality does not prevent one user from gaining access to another user's data or record by modifying the key value identifying the data.Insecure Direct Object Reference / IDORHorizontal Authorization,699840
+Weak Password Recovery Mechanism for Forgotten Password - (640),127,699840640,"The software contains a mechanism for users to recover or change their passwords without knowing the original password, but the mechanism is weak.",699840
+Incorrect Ownership Assignment - (708),128,699840708,"The software assigns an owner to a resource, but the owner is outside of the intended control sphere.",699840
+Allocation of Resources Without Limits or Throttling - (770),129,699840770,"The software allocates a reusable resource or group of resources on behalf of an actor without imposing any restrictions on the size or number of resources that can be allocated, in violation of the intended security policy for that actor.",699840
+Premature Release of Resource During Expected Lifetime - (826),130,699840826,The program releases a resource that is still intended to be used by the program itself or another actor.,699840
+"Improper Enforcement of a Single, Unique Action - (837)",131,699840837,"The software requires that an actor should only be able to perform an action once, or to have only one unique action, but the software does not enforce or improperly enforces this restriction.",699840
+Improper Enforcement of Behavioral Workflow - (841),132,699840841,"The software supports a session in which more than one behavior must be performed by an actor, but it does not properly ensure that the actor performs the behaviors in the required sequence.",699840
+Communication Channel Errors - (417),133,699417,"Weaknesses in this category are related to improper handling of communication channels and access paths. These weaknesses include problems in creating, managing, or removing alternate channels and alternate paths. Some of these can overlap virtual file problems and are commonly used in ""bypass"" attacks, such as those that exploit authentication errors.",0
+Key Exchange without Entity Authentication - (322),134,699417322,The software performs a key exchange with an actor without verifying the identity of that actor.,699417
+Origin Validation Error - (346),135,699417346,The software does not properly verify that the source of data or communication is valid.,699417
+Covert Timing Channel - (385),136,699417385,"Covert timing channels convey information by modulating some aspect of system behavior over time, so that the program receiving the information can observe system behavior and infer protected information.",699417
+Unprotected Primary Channel - (419),137,699417419,"The software uses a primary channel for administration or restricted functionality, but it does not properly protect the channel.",699417
+Unprotected Alternate Channel - (420),138,699417420,"The software protects a primary channel, but it does not use the same level of protection for an alternate channel.",699417
+Direct Request ('Forced Browsing') - (425),139,699417425,"The web application does not adequately enforce appropriate authorization on all restricted URLs, scripts, or files.forced browsing",699417
+Covert Storage Channel - (515),140,699417515,A covert storage channel transfers information through the setting of bits by one program and the reading of those bits by another. What distinguishes this case from that of ordinary operation is that the bits are used to convey encoded information.,699417
+Improper Enforcement of Message Integrity During Transmission in a Communication Channel - (924),141,699417924,"The software establishes a communication channel with an endpoint and receives a message from that endpoint, but it does not sufficiently ensure that the message was not modified during transmission.",699417
+Improper Verification of Source of a Communication Channel - (940),142,699417940,"The software establishes a communication channel to handle an incoming request that has been initiated by an actor, but it does not properly verify that the request is coming from the expected origin.",699417
+Incorrectly Specified Destination in a Communication Channel - (941),143,699417941,"The software creates a communication channel to initiate an outgoing request to an actor, but it does not correctly specify the intended destination for that actor.",699417
+Complexity Issues - (1226),144,6991226,Weaknesses in this category are associated with things being overly complex.,0
+Data Element Aggregating an Excessively Large Number of Non-Primitive Elements - (1043),145,69912261043,"The software uses a data element that has an excessively large
+					number of sub-elements with non-primitive data types such as structures or aggregated objects.",6991226
+Modules with Circular Dependencies - (1047),146,69912261047,"The software contains modules in which one module has references that cycle back to itself, i.e., there are circular dependencies.",6991226
+Multiple Inheritance from Concrete Classes - (1055),147,69912261055,"The software contains a class with inheritance from more than
+					one concrete class.",6991226
+Invokable Control Element with Variadic Parameters - (1056),148,69912261056,"A named-callable or method control element has a signature that
+					supports a variable (variadic) number of parameters or arguments.",6991226
+Excessive Number of Inefficient Server-Side Data Accesses - (1060),149,69912261060,The software performs too many data queries without using efficient data processing functionality such as stored procedures.,6991226
+Invokable Control Element with Signature Containing an Excessive Number of Parameters - (1064),150,69912261064,"The software contains a function, subroutine, or method whose signature has an unnecessarily large number of
+					parameters/arguments.",6991226
+Class with Excessively Deep Inheritance - (1074),151,69912261074,"A class has an inheritance level that is too high, i.e., it
+					has a large number of parent classes.",6991226
+Unconditional Control Flow Transfer outside of Switch Block - (1075),152,69912261075,"The software performs unconditional control transfer (such as a
+					""goto"") in code outside of a branching structure such as a switch
+					block.",6991226
+Source Code File with Excessive Number of Lines of Code - (1080),153,69912261080,"A source code file has too many lines of
+					code.",6991226
+Class with Excessive Number of Child Classes - (1086),154,69912261086,"A class contains an unnecessarily large number of
+					children.",6991226
+Loop Condition Value Update within the Loop - (1095),155,69912261095,"The software uses a loop with a control flow condition based on
+					a value that is updated within the body of the loop.",6991226
+Excessive Use of Unconditional Branching - (1119),156,69912261119,"The code uses too many unconditional branches (such as
+					""goto"").",6991226
+Excessive McCabe Cyclomatic Complexity - (1121),157,69912261121,"The code contains McCabe cyclomatic complexity that exceeds a
+	desirable maximum.",6991226
+Excessive Halstead Complexity - (1122),158,69912261122,"The code is structured in a way that a Halstead complexity
+					measure exceeds a desirable maximum.",6991226
+Excessive Use of Self-Modifying Code - (1123),159,69912261123,"The product uses too much self-modifying
+					code.",6991226
+Excessively Deep Nesting - (1124),160,69912261124,"The code contains a callable or other code grouping in which
+					the nesting / branching is too deep.",6991226
+Excessive Attack Surface - (1125),161,69912261125,"The product has an attack surface whose quantitative
+					measurement exceeds a desirable maximum.",6991226
+Concurrency Issues - (557),162,699557,Weaknesses in this category are related to concurrent use of shared resources.,0
+Race Condition Enabling Link Following - (363),163,699557363,"The software checks the status of a file or directory before accessing it, which produces a race condition in which the file can be replaced with a link before the access is performed, causing the software to access the wrong file.",699557
+Signal Handler Race Condition - (364),164,699557364,The software uses a signal handler that introduces a race condition.,699557
+Race Condition in Switch - (365),165,699557365,"The code contains a switch statement in which the switched variable can be modified while the switch is still executing, resulting in unexpected behavior.",699557
+Race Condition within a Thread - (366),166,699557366,"If two threads of execution use a resource simultaneously, there exists the possibility that resources may be used while invalid, in turn making the state of execution undefined.",699557
+Time-of-check Time-of-use (TOCTOU) Race Condition - (367),167,699557367,"The software checks the state of a resource before using that resource, but the resource's state can change between the check and the use in a way that invalidates the results of the check. This can cause the software to perform invalid actions when the resource is in an unexpected state.TOCTTOUTOCCTOU",699557
+Context Switching Race Condition - (368),168,699557368,"A product performs a series of non-atomic actions to switch between contexts that cross privilege or other security boundaries, but a race condition allows an attacker to modify or misrepresent the product's behavior during the switch.",699557
+Symbolic Name not Mapping to Correct Object - (386),169,699557386,"A constant symbolic reference to an object is used, even though the reference can resolve to a different object over time.",699557
+Race Condition During Access to Alternate Channel - (421),170,699557421,"The product opens an alternate channel to communicate with an authorized user, but the channel is accessible to other actors.",699557
+Unsynchronized Access to Shared Data in a Multithreaded Context - (567),171,699557567,"The product does not properly synchronize shared data, such as static variables across threads, which can lead to undefined behavior and unpredictable data changes.",699557
+Empty Synchronized Block - (585),172,699557585,The software contains an empty synchronized block.,699557
+Use of a Non-reentrant Function in a Concurrent Context - (663),173,699557663,The software calls a non-reentrant function in a concurrent context in which a competing code sequence (e.g. thread or signal handler) may have an opportunity to call the same function or otherwise influence its state.,699557
+Missing Synchronization - (820),174,699557820,The software utilizes a shared resource in a concurrent manner but does not attempt to synchronize access to the resource.,699557
+Incorrect Synchronization - (821),175,699557821,"The software utilizes a shared resource in a concurrent manner, but it does not correctly synchronize access to the resource.",699557
+Invokable Control Element in Multi-Thread Context with non-Final Static Storable or Member Element - (1058),176,6995571058,"The code contains a function or method that
+		 operates in a multi-threaded environment but owns an unsafe non-final
+		                     static storable or member data element.",699557
+Synchronous Access of Remote Resource without Timeout - (1088),177,6995571088,"The code has a synchronous call to a remote resource, but there is no timeout for the call, or the timeout is set to infinite.",699557
+Credentials Management Errors - (255),178,699255,Weaknesses in this category are related to the management of credentials.,0
+Unprotected Storage of Credentials - (256),179,699255256,Storing a password in plaintext may result in a system compromise.,699255
+Storing Passwords in a Recoverable Format - (257),180,699255257,"The storage of passwords in a recoverable format makes them subject to password reuse attacks by malicious users. In fact, it should be noted that recoverable encrypted passwords provide no significant benefit over plaintext passwords since they are subject not only to reuse by malicious attackers but also by malicious insiders. If a system administrator can recover a password directly, or use a brute force search on the available information, the administrator can use the password on other accounts.",699255
+Password in Configuration File - (260),181,699255260,The software stores a password in a configuration file that might be accessible to actors who do not know the password.,699255
+Weak Encoding for Password - (261),182,699255261,Obscuring a password with a trivial encoding does not protect the password.,699255
+Not Using Password Aging - (262),183,699255262,"If no mechanism is in place for managing password aging, users will have no incentive to update passwords in a timely manner.",699255
+Password Aging with Long Expiration - (263),184,699255263,Allowing password aging to occur unchecked can result in the possibility of diminished password integrity.,699255
+Use of a Key Past its Expiration Date - (324),185,699255324,"The product uses a cryptographic key or password past its expiration date, which diminishes its safety significantly by increasing the timing window for cracking attacks against that key.",699255
+Weak Password Requirements - (521),186,699255521,"The product does not require that users should have strong passwords, which makes it easier for attackers to compromise user accounts.",699255
+Unprotected Transport of Credentials - (523),187,699255523,Login pages do not use adequate measures to protect the user name and password while they are in transit from the client to the server.,699255
+Missing Password Field Masking - (549),188,699255549,"The software does not mask passwords during entry, increasing the potential for attackers to observe and capture passwords.",699255
+Unverified Password Change - (620),189,699255620,"When setting a new password for a user, the product does not require knowledge of the original password, or using another form of authentication.",699255
+Weak Password Recovery Mechanism for Forgotten Password - (640),190,699255640,"The software contains a mechanism for users to recover or change their passwords without knowing the original password, but the mechanism is weak.",699255
+Use of Hard-coded Credentials - (798),191,699255798,"The software contains hard-coded credentials, such as a password or cryptographic key, which it uses for its own inbound authentication, outbound communication to external components, or encryption of internal data.",699255
+Use of Password Hash With Insufficient Computational Effort - (916),192,699255916,"The software generates a hash for a password, but it uses a scheme that does not provide a sufficient level of computational effort that would make password cracking attacks infeasible or expensive.",699255
+Cryptographic Issues - (310),193,699310,"Weaknesses in this category are related to the design and implementation of data confidentiality and integrity. Frequently these deal with the use of encoding techniques, encryption libraries, and hashing algorithms. The weaknesses in this category could lead to a degradation of the quality data if they are not addressed.",0
+Weak Encoding for Password - (261),194,699310261,Obscuring a password with a trivial encoding does not protect the password.,699310
+Use of a Key Past its Expiration Date - (324),195,699310324,"The product uses a cryptographic key or password past its expiration date, which diminishes its safety significantly by increasing the timing window for cracking attacks against that key.",699310
+Missing Required Cryptographic Step - (325),196,699310325,"The product does not implement a required step in a cryptographic algorithm, resulting in weaker encryption than advertised by that algorithm.",699310
+Reversible One-Way Hash - (328),197,699310328,"The product uses a hashing algorithm that produces a hash value that can be used to determine the original input, or to find an input that can produce the same hash, more efficiently than brute force techniques.",699310
+Insufficient Entropy - (331),198,699310331,"The software uses an algorithm or scheme that produces insufficient entropy, leaving patterns or clusters of values that are more likely to occur than others.",699310
+Small Space of Random Values - (334),199,699310334,"The number of possible random values is smaller than needed by the product, making it more susceptible to brute force attacks.",699310
+Incorrect Usage of Seeds in Pseudo-Random Number Generator (PRNG) - (335),200,699310335,The software uses a Pseudo-Random Number Generator (PRNG) that does not correctly manage seeds.,699310
+Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG) - (338),201,699310338,"The product uses a Pseudo-Random Number Generator (PRNG) in a security context, but the PRNG's algorithm is not cryptographically strong.",699310
+Improper Verification of Cryptographic Signature - (347),202,699310347,"The software does not verify, or incorrectly verifies, the cryptographic signature for data.",699310
+Use of Password Hash With Insufficient Computational Effort - (916),203,699310916,"The software generates a hash for a password, but it uses a scheme that does not provide a sufficient level of computational effort that would make password cracking attacks infeasible or expensive.",699310
+Use of a Risky Cryptographic Primitive - (1240),204,6993101240,The product implements a cryptographic algorithm using a non-standard or unproven cryptographic primitive.,699310
+Data Integrity Issues - (1214),205,6991214,"Weaknesses in this category are related to a software system's data integrity components. Frequently these deal with the ability to ensure the integrity of data, such as messages, resource files, deployment files, and configuration files. The weaknesses in this category could lead to a degradation of data integrity quality if they are not addressed.",0
+Key Exchange without Entity Authentication - (322),206,6991214322,The software performs a key exchange with an actor without verifying the identity of that actor.,6991214
+Origin Validation Error - (346),207,6991214346,The software does not properly verify that the source of data or communication is valid.,6991214
+Improper Verification of Cryptographic Signature - (347),208,6991214347,"The software does not verify, or incorrectly verifies, the cryptographic signature for data.",6991214
+Use of Less Trusted Source - (348),209,6991214348,"The software has two different sources of the same data or information, but it uses the source that has less support for verification, is less trusted, or is less resistant to attack.",6991214
+Acceptance of Extraneous Untrusted Data With Trusted Data - (349),210,6991214349,"The software, when processing trusted data, accepts any untrusted data that is also included with the trusted data, treating the untrusted data as if it were trusted.",6991214
+Insufficient Type Distinction - (351),211,6991214351,The software does not properly distinguish between different types of elements in a way that leads to insecure behavior.,6991214
+Missing Support for Integrity Check - (353),212,6991214353,"The software uses a transmission protocol that does not include a mechanism for verifying the integrity of the data during transmission, such as a checksum.",6991214
+Improper Validation of Integrity Check Value - (354),213,6991214354,"The software does not validate or incorrectly validates the integrity check values or ""checksums"" of a message. This may prevent it from detecting if the data has been modified or corrupted in transmission.",6991214
+Download of Code Without Integrity Check - (494),214,6991214494,The product downloads source code or an executable from a remote location and executes the code without sufficiently verifying the origin and integrity of the code.,6991214
+Reliance on Cookies without Validation and Integrity Checking - (565),215,6991214565,"The application relies on the existence or values of cookies when performing security-critical operations, but it does not properly ensure that the setting is valid for the associated user.",6991214
+Reliance on Obfuscation or Encryption of Security-Relevant Inputs without Integrity Checking - (649),216,6991214649,"The software uses obfuscation or encryption of inputs that should not be mutable by an external actor, but the software does not use integrity checks to detect if those inputs have been modified.",6991214
+Inclusion of Functionality from Untrusted Control Sphere - (829),217,6991214829,"The software imports, requires, or includes executable functionality (such as a library) from a source that is outside of the intended control sphere.",6991214
+Improper Enforcement of Message Integrity During Transmission in a Communication Channel - (924),218,6991214924,"The software establishes a communication channel with an endpoint and receives a message from that endpoint, but it does not sufficiently ensure that the message was not modified during transmission.",6991214
+Data Processing Errors - (19),219,69919,Weaknesses in this category are typically found in functionality that processes data. Data processing is the manipulation of input to retrieve or save information.,0
+Improper Handling of Length Parameter Inconsistency - (130),220,69919130,"The software parses a formatted message or structure, but it does not handle or incorrectly handles a length field that is inconsistent with the actual length of the associated data.length manipulationlength tampering",69919
+Improper Handling of Missing Special Element - (166),221,69919166,"The software receives input from an upstream component, but it does not handle or incorrectly handles when an expected special element is missing.",69919
+Improper Handling of Additional Special Element - (167),222,69919167,"The software receives input from an upstream component, but it does not handle or incorrectly handles when an additional unexpected special element is provided.",69919
+Improper Handling of Inconsistent Special Elements - (168),223,69919168,The software does not properly handle input in which an inconsistency exists between two or more special characters or reserved words.,69919
+Improper Handling of Case Sensitivity - (178),224,69919178,"The software does not properly account for differences in case sensitivity when accessing or determining the properties of a resource, leading to inconsistent results.",69919
+Collapse of Data into Unsafe Value - (182),225,69919182,"The software filters data in a way that causes it to be reduced or ""collapsed"" into an unsafe value that violates an expected security property.",69919
+Overly Restrictive Regular Expression - (186),226,69919186,"A regular expression is overly restrictive, which prevents dangerous values from being detected.",69919
+Improper Handling of Values - (229),227,69919229,"The software does not properly handle when the expected number of values for parameters, fields, or arguments is not provided in input, or if those values are undefined.",69919
+Improper Handling of Parameters - (233),228,69919233,"The software does not properly handle when the expected number of parameters, fields, or arguments is not provided in input, or if those parameters are undefined.",69919
+Improper Handling of Structural Elements - (237),229,69919237,The software does not handle or incorrectly handles inputs that are related to complex structures.,69919
+Improper Handling of Unexpected Data Type - (241),230,69919241,"The software does not handle or incorrectly handles when a particular element is not the expected type, e.g. it expects a digit (0-9) but is provided with a letter (A-Z).",69919
+Improper Handling of Highly Compressed Data (Data Amplification) - (409),231,69919409,The software does not handle or incorrectly handles a compressed input with a very high compression ratio that produces a large output.,69919
+Modification of Assumed-Immutable Data (MAID) - (471),232,69919471,The software does not properly protect an assumed-immutable element from being modified by an attacker.,69919
+External Control of Assumed-Immutable Web Parameter - (472),233,69919472,"The web application does not sufficiently verify inputs that are assumed to be immutable but are actually externally controllable, such as hidden form fields.Assumed-Immutable Parameter Tampering",69919
+URL Redirection to Untrusted Site ('Open Redirect') - (601),234,69919601,"A web application accepts a user-controlled input that specifies a link to an external site, and uses that link in a Redirect. This simplifies phishing attacks.Open RedirectCross-site RedirectCross-domain Redirect",69919
+Improper Restriction of XML External Entity Reference - (611),235,69919611,"The software processes an XML document that can contain XML entities with URIs that resolve to documents outside of the intended sphere of control, causing the product to embed incorrect documents into its output.XXE",69919
+Executable Regular Expression Error - (624),236,69919624,"The product uses a regular expression that either (1) contains an executable component with user-controlled inputs, or (2) allows a user to enable execution by inserting pattern modifiers.",69919
+Permissive Regular Expression - (625),237,69919625,The product uses a regular expression that does not sufficiently restrict the set of allowed values.,69919
+Improper Restriction of Recursive Entity References in DTDs ('XML Entity Expansion') - (776),238,69919776,"The software uses XML documents and allows their structure to be defined with a Document Type Definition (DTD), but it does not properly control the number of recursive definitions of entities.XEEBillion Laughs AttackXML Bomb",69919
+Comparison of Incompatible Types - (1024),239,699191024,"The software performs a comparison between two entities, but the entities are of different, incompatible types that cannot be guaranteed to provide correct results when they are directly compared.",69919
+Data Neutralization Issues - (137),240,699137,Weaknesses in this category are related to the creation or neutralization of data using an incorrect format.,0
+Improper Neutralization of Equivalent Special Elements - (76),241,69913776,"The software properly neutralizes certain special elements, but it improperly neutralizes equivalent special elements.",699137
+Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') - (78),242,69913778,"The software constructs all or part of an OS command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended OS command when it is sent to a downstream component.Shell injectionShell metacharacters",699137
+Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') - (79),243,69913779,The software does not neutralize or incorrectly neutralizes user-controllable input before it is placed in output that is used as a web page that is served to other users.XSSHTML InjectionCSS,699137
+Improper Neutralization of Argument Delimiters in a Command ('Argument Injection') - (88),244,69913788,"The software constructs a string for a command to executed by a separate component
+in another control sphere, but it does not properly delimit the
+intended arguments, options, or switches within that command string.",699137
+Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') - (89),245,69913789,"The software constructs all or part of an SQL command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended SQL command when it is sent to a downstream component.",699137
+Improper Neutralization of Special Elements used in an LDAP Query ('LDAP Injection') - (90),246,69913790,"The software constructs all or part of an LDAP query using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended LDAP query when it is sent to a downstream component.",699137
+XML Injection (aka Blind XPath Injection) - (91),247,69913791,"The software does not properly neutralize special elements that are used in XML, allowing attackers to modify the syntax, content, or commands of the XML before it is processed by an end system.",699137
+Improper Neutralization of CRLF Sequences ('CRLF Injection') - (93),248,69913793,"The software uses CRLF (carriage return line feeds) as a special element, e.g. to separate lines or records, but it does not neutralize or incorrectly neutralizes CRLF sequences from inputs.",699137
+Improper Control of Generation of Code ('Code Injection') - (94),249,69913794,"The software constructs all or part of a code segment using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the syntax or behavior of the intended code segment.",699137
+Improper Neutralization of Directives in Statically Saved Code ('Static Code Injection') - (96),250,69913796,"The software receives input from an upstream component, but it does not neutralize or incorrectly neutralizes code syntax before inserting the input into an executable resource, such as a library, configuration file, or template.",699137
+Improper Output Neutralization for Logs - (117),251,699137117,The software does not neutralize or incorrectly neutralizes output that is written to logs.,699137
+Improper Neutralization of Delimiters - (140),252,699137140,The software does not neutralize or incorrectly neutralizes delimiters.,699137
+Improper Null Termination - (170),253,699137170,The software does not terminate or incorrectly terminates a string or array with a null character or equivalent terminator.,699137
+Reliance on Data/Memory Layout - (188),254,699137188,"The software makes invalid assumptions about how protocol data or memory is organized at a lower level, resulting in unintended program behavior.",699137
+Duplicate Key in Associative List (Alist) - (462),255,699137462,Duplicate keys in associative lists can lead to non-unique keys being mistaken for an error.,699137
+Deletion of Data Structure Sentinel - (463),256,699137463,The accidental deletion of a data-structure sentinel can cause serious programming logic problems.,699137
+Addition of Data Structure Sentinel - (464),257,699137464,The accidental addition of a data-structure sentinel can cause serious programming logic problems.,699137
+Improper Restriction of Names for Files and Other Resources - (641),258,699137641,"The application constructs the name of a file or other resource using input from an upstream component, but it does not restrict or incorrectly restricts the resulting name.",699137
+Improper Neutralization of Data within XPath Expressions ('XPath Injection') - (643),259,699137643,"The software uses external input to dynamically construct an XPath expression used to retrieve data from an XML database, but it does not neutralize or incorrectly neutralizes that input. This allows an attacker to control the structure of the query.",699137
+Improper Neutralization of Data within XQuery Expressions ('XQuery Injection') - (652),260,699137652,"The software uses external input to dynamically construct an XQuery expression used to retrieve data from an XML database, but it does not neutralize or incorrectly neutralizes that input. This allows an attacker to control the structure of the query.",699137
+Incomplete Filtering of Special Elements - (791),261,699137791,"The software receives data from an upstream component, but does not completely filter special elements before sending it to a downstream component.",699137
+Only Filtering Special Elements at a Specified Location - (795),262,699137795,"The software receives data from an upstream component, but only accounts for special elements at a specified location, thereby missing remaining special elements that may exist before sending it to a downstream component.",699137
+Inappropriate Encoding for Output Context - (838),263,699137838,"The software uses or specifies an encoding when generating output to a downstream component, but the specified encoding is not the same as the encoding that is expected by the downstream component.",699137
+Improper Neutralization of Special Elements used in an Expression Language Statement ('Expression Language Injection') - (917),264,699137917,"The software constructs all or part of an expression language (EL) statement in a Java Server Page (JSP) using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended EL statement before it is executed.EL Injection",699137
+Improper Neutralization of Formula Elements in a CSV File - (1236),265,6991371236,"The software saves user-provided information into a Comma-Separated Value (CSV) file, but it does not neutralize or incorrectly neutralizes special elements that could be interpreted as a command when the file is opened by spreadsheet software.CSV InjectionFormula InjectionExcel Macro Injection",699137
+Documentation Issues - (1225),266,6991225,Weaknesses in this category are related to the documentation provide to support a product.,0
+Missing Documentation for Design - (1053),267,69912251053,The product does not have documentation that represents how it is designed.,6991225
+Inconsistency Between Implementation and Documented Design - (1068),268,69912251068,"The implementation of the product is not consistent with the
+					design as described within the relevant documentation.",6991225
+Incomplete Design Documentation - (1110),269,69912251110,"The product's design documentation does not adequately describe
+					control flow, data flow, system initialization, relationships between tasks,
+					components, rationales, or other important aspects of the
+					design.",6991225
+Incomplete I/O Documentation - (1111),270,69912251111,"The product's documentation does not adequately define inputs,
+					outputs, or system/software interfaces.",6991225
+Incomplete Documentation of Program Execution - (1112),271,69912251112,"The document does not fully define all mechanisms that are used
+					to control or influence how product-specific programs are
+					executed.",6991225
+Insufficient Documentation of Error Handling Techniques - (1118),272,69912251118,"The documentation does not sufficiently describe the techniques
+					that are used for error handling, exception processing, or similar
+					mechanisms.",6991225
+File Handling Issues - (1219),273,6991219,"Weaknesses in this category are related to the handling of files within a software system. Files, directories, and folders are so central to information technology that many different weaknesses and variants have been discovered.",0
+Relative Path Traversal - (23),274,699121923,"The software uses external input to construct a pathname that should be within a restricted directory, but it does not properly neutralize sequences such as "".."" that can resolve to a location that is outside of that directory.",6991219
+Absolute Path Traversal - (36),275,699121936,"The software uses external input to construct a pathname that should be within a restricted directory, but it does not properly neutralize absolute path sequences such as ""/abs/path"" that can resolve to a location that is outside of that directory.",6991219
+Improper Resolution of Path Equivalence - (41),276,699121941,The system or application is vulnerable to file system contents disclosure through path equivalence. Path equivalence involves the use of special characters in file and directory names. The associated manipulations are intended to generate multiple names for the same object.,6991219
+Improper Link Resolution Before File Access ('Link Following') - (59),277,699121959,"The software attempts to access a file based on the filename, but it does not properly prevent that filename from identifying a link or shortcut that resolves to an unintended resource.insecure temporary file",6991219
+Improper Handling of File Names that Identify Virtual Resources - (66),278,699121966,"The product does not handle or incorrectly handles a file name that identifies a ""virtual"" resource that is not directly specified within the directory that is associated with the file name, causing the product to perform file-based operations on a resource that is not a file.",6991219
+Creation of Temporary File With Insecure Permissions - (378),279,6991219378,"Opening temporary files without appropriate measures or controls can leave the file, its contents and any function that it impacts vulnerable to attack.",6991219
+Creation of Temporary File in Directory with Insecure Permissions - (379),280,6991219379,The software creates a temporary file in a directory whose permissions allow unintended actors to determine the file's existence or otherwise access that file.,6991219
+Untrusted Search Path - (426),281,6991219426,The application searches for critical resources using an externally-supplied search path that can point to resources that are not under the application's direct control.Untrusted Path,6991219
+Uncontrolled Search Path Element - (427),282,6991219427,"The product uses a fixed or controlled search path to find resources, but one or more locations in that path can be under the control of unintended actors.DLL preloadingBinary plantingInsecure library loading",6991219
+Unquoted Search Path or Element - (428),283,6991219428,"The product uses a search path that contains an unquoted element, in which the element contains whitespace or other separators. This can cause the product to access resources in a parent path.",6991219
+Encapsulation Issues - (1227),284,6991227,Weaknesses in this category are related to issues surrounding the bundling of data with the methods intended to operate on that data.,0
+Invocation of a Control Element at an Unnecessarily Deep Horizontal Layer - (1054),285,69912271054,"The code at one architectural layer invokes code that resides
+					at a deeper layer than the adjacent layer, i.e., the invocation skips at least one
+					layer, and the invoked code is not part of a vertical utility layer that can be referenced from any horizontal layer.",6991227
+Data Access Operations Outside of Expected Data Manager Component - (1057),286,69912271057,"The software uses a dedicated, central data manager component as required by design, but it contains code that performs data-access operations that do not use this data manager.",6991227
+Parent Class with References to Child Class - (1062),287,69912271062,"The code has a parent class that contains references to a child class, its methods, or its members.",6991227
+Data Access from Outside Expected Data Manager Component - (1083),288,69912271083,"The software is intended to manage data access through a particular data manager component such as a relational or non-SQL database, but it contains code that performs data access operations without using that component.",6991227
+Method Containing Access of a Member Element from Another Class - (1090),289,69912271090,"A method for a class performs an operation that directly
+					accesses a member element from another class.",6991227
+Insufficient Isolation of System-Dependent Functions - (1100),290,69912271100,"The product or code does not isolate system-dependent
+					functionality into separate standalone modules.",6991227
+Insufficient Encapsulation of Machine-Dependent Functionality - (1105),291,69912271105,"The product or code uses machine-dependent functionality, but
+					it does not sufficiently encapsulate or isolate this functionality from
+					the rest of the code.",6991227
+"Error Conditions, Return Values, Status Codes - (389)",292,699389,"This category includes weaknesses that occur if a function does not generate the correct return/status code, or if the application does not handle all possible return/status codes that could be generated by a function. This type of problem is most often found in conditions that are rarely encountered during the normal operation of the product. Presumably, most bugs related to common conditions are found and eliminated during development and testing. In some cases, the attacker can directly control or influence the environment to trigger the rare conditions.",0
+Generation of Error Message Containing Sensitive Information - (209),293,699389209,"The software generates an error message that includes sensitive information about its environment, users, or associated data.",699389
+Uncaught Exception - (248),294,699389248,"An exception is thrown from a function, but it is not caught.",699389
+Unchecked Return Value - (252),295,699389252,"The software does not check the return value from a method or function, which can prevent it from detecting unexpected states and conditions.",699389
+Incorrect Check of Function Return Value - (253),296,699389253,"The software incorrectly checks a return value from a function, which prevents the software from detecting errors or exceptional conditions.",699389
+Detection of Error Condition Without Action - (390),297,699389390,"The software detects a specific error, but takes no actions to handle the error.",699389
+Unchecked Error Condition - (391),298,699389391,[PLANNED FOR DEPRECATION. SEE MAINTENANCE NOTES.] Ignoring exceptions and other error conditions may allow an attacker to induce unexpected behavior unnoticed.,699389
+Missing Report of Error Condition - (392),299,699389392,The software encounters an error but does not provide a status code or return value to indicate that an error has occurred.,699389
+Return of Wrong Status Code - (393),300,699389393,"A function or operation returns an incorrect return value or status code that does not indicate an error, but causes the product to modify its behavior based on the incorrect result.",699389
+Unexpected Status Code or Return Value - (394),301,699389394,"The software does not properly check when a function or operation returns a value that is legitimate for the function, but is not expected by the software.",699389
+Use of NullPointerException Catch to Detect NULL Pointer Dereference - (395),302,699389395,Catching NullPointerException should not be used as an alternative to programmatic checks to prevent dereferencing a null pointer.,699389
+Declaration of Catch for Generic Exception - (396),303,699389396,Catching overly broad exceptions promotes complex error handling code that is more likely to contain security vulnerabilities.,699389
+Declaration of Throws for Generic Exception - (397),304,699389397,Throwing overly broad exceptions promotes complex error handling code that is more likely to contain security vulnerabilities.,699389
+Missing Standardized Error Handling Mechanism - (544),305,699389544,"The software does not use a standardized method for handling errors throughout the code, which might introduce inconsistent error handling and resultant weaknesses.",699389
+Return Inside Finally Block - (584),306,699389584,"The code has a return statement inside a finally block, which will cause any thrown exception in the try block to be discarded.",699389
+Uncaught Exception in Servlet  - (600),307,699389600,"The Servlet does not catch all exceptions, which may reveal sensitive debugging information.Missing Catch Block",699389
+Reachable Assertion - (617),308,699389617,"The product contains an assert() or similar statement that can be triggered by an attacker, which leads to an application exit or other behavior that is more severe than necessary.assertion failure",699389
+Missing Custom Error Page - (756),309,699389756,"The software does not return custom error pages to the user, possibly exposing sensitive information.",699389
+Empty Exception Block - (1069),310,6993891069,"An invokable code block contains an exception handling block that does not contain any code, i.e. is empty.",699389
+Expression Issues - (569),311,699569,Weaknesses in this category are related to incorrectly written expressions within code.,0
+Use of Incorrect Operator - (480),312,699569480,"The programmer accidentally uses the wrong operator, which changes the application logic in security-relevant ways.",699569
+Expression is Always False - (570),313,699569570,The software contains an expression that will always evaluate to false.,699569
+Expression is Always True - (571),314,699569571,The software contains an expression that will always evaluate to true.,699569
+Attempt to Access Child of a Non-structure Pointer - (588),315,699569588,Casting a non-structure type to a structure type and accessing a field can lead to memory access errors or data corruption.,699569
+Comparison of Object References Instead of Object Contents - (595),316,699569595,"The program compares object references instead of the contents of the objects themselves, preventing it from detecting equivalent objects.",699569
+Operator Precedence Logic Error - (783),317,699569783,The program uses an expression in which operator precedence causes incorrect logic to be used.,699569
+Handler Errors - (429),318,699429,Weaknesses in this category are related to improper management of handlers.,0
+Deployment of Wrong Handler - (430),319,699429430,"The wrong ""handler"" is assigned to process an object.",699429
+Missing Handler - (431),320,699429431,A handler is not available or implemented.,699429
+Dangerous Signal Handler not Disabled During Sensitive Operations - (432),321,699429432,"The application uses a signal handler that shares state with other signal handlers, but it does not properly mask or prevent those signal handlers from being invoked while the original signal handler is still running.",699429
+Unparsed Raw Web Content Delivery - (433),322,699429433,The software stores raw content or supporting code under the web document root with an extension that is not specifically handled by the server.,699429
+Unrestricted Upload of File with Dangerous Type - (434),323,699429434,The software allows the attacker to upload or transfer files of dangerous types that can be automatically processed within the product's environment.Unrestricted File Upload,699429
+Signal Handler Use of a Non-reentrant Function - (479),324,699429479,The program defines a signal handler that calls a non-reentrant function.,699429
+Information Management Errors - (199),325,699199,Weaknesses in this category are related to improper handling of sensitive information.,0
+Exposure of Sensitive Information Through Sent Data - (201),326,699199201,"The code transmits data to another actor, but the data contains sensitive information that should not be accessible to the actor that is receiving the data.",699199
+Observable Response Discrepancy - (204),327,699199204,The product provides different responses to incoming requests in a way that reveals internal state information to an unauthorized actor outside of the intended control sphere.,699199
+Observable Behavioral Discrepancy - (205),328,699199205,"The product's behaviors indicate important differences that may be observed by unauthorized actors in a way that reveals (1) its internal state or decision process, or (2) differences from other products with equivalent functionality.",699199
+Observable Timing Discrepancy - (208),329,699199208,"Two separate operations in a product require different amounts of time to complete, in a way that is observable to an actor and reveals security-relevant information about the state of the product, such as whether a particular operation was successful or not.",699199
+Generation of Error Message Containing Sensitive Information - (209),330,699199209,"The software generates an error message that includes sensitive information about its environment, users, or associated data.",699199
+Improper Removal of Sensitive Information Before Storage or Transfer - (212),331,699199212,"The product stores, transfers, or shares a resource that contains sensitive information, but it does not properly remove that information before the product makes the resource available to unauthorized actors.",699199
+Exposure of Sensitive Information Due to Incompatible Policies - (213),332,699199213,"The product's intended functionality exposes information to certain actors in accordance with the developer's security policy, but this information is regarded as sensitive according to the intended security policies of other stakeholders such as the product's administrator, users, or others whose information is being processed.",699199
+Invocation of Process Using Visible Sensitive Information - (214),333,699199214,"A process is invoked with sensitive command-line arguments, environment variables, or other elements that can be seen by other processes on the operating system.",699199
+Insertion of Sensitive Information Into Debugging Code - (215),334,699199215,"The application inserts sensitive information into debugging code, which could expose this information if the debugging code is not disabled in production.",699199
+Cleartext Storage of Sensitive Information - (312),335,699199312,The application stores sensitive information in cleartext within a resource that might be accessible to another control sphere.,699199
+Cleartext Transmission of Sensitive Information - (319),336,699199319,The software transmits sensitive or security-critical data in cleartext in a communication channel that can be sniffed by unauthorized actors.,699199
+Exposure of Private Personal Information to an Unauthorized Actor - (359),337,699199359,"The product does not properly prevent a person's private, personal information from being accessed by actors who either (1) are not explicitly authorized to access the information or (2) do not have the implicit consent of the person about whom the information is collected.Privacy violationPrivacy leakPrivacy leakage",699199
+Exposure of Sensitive System Information to an Unauthorized Control Sphere - (497),338,699199497,The application does not properly prevent sensitive system-level information from being accessed by unauthorized actors who do not have the same level of access to the underlying system as the application does.,699199
+Use of Cache Containing Sensitive Information - (524),339,699199524,"The code uses a cache that contains sensitive information, but the cache can be read by an actor outside of the intended control sphere.",699199
+Insertion of Sensitive Information into Log File - (532),340,699199532,Information written to log files can be of a sensitive nature and give valuable guidance to an attacker or expose sensitive user information.,699199
+Inclusion of Sensitive Information in Source Code - (540),341,699199540,Source code on a web server or repository often contains sensitive information and should generally not be accessible to users.,699199
+Storage of Sensitive Data in a Mechanism without Access Control - (921),342,699199921,The software stores sensitive information in a file system or device that does not have built-in access control.,699199
+Exposure of Sensitive Information Through Metadata - (1230),343,6991991230,"The product prevents direct access to a resource containing sensitive information, but it does not sufficiently limit access to metadata that is derived from the original, sensitive information.",699199
+Initialization and Cleanup Errors - (452),344,699452,Weaknesses in this category occur in behaviors that are used for initialization and breakdown.,0
+Sensitive Information Uncleared in Resource Before Release for Reuse - (226),345,699452226,"The product prepares to release a resource such as memory or a file so that the resource can be reused by other entities, but the product does not fully clear previously-used sensitive information from that resource before the resource is released.",699452
+External Initialization of Trusted Variables or Data Stores - (454),346,699452454,The software initializes critical internal variables or data stores using inputs that can be modified by untrusted actors.,699452
+Non-exit on Failed Initialization - (455),347,699452455,"The software does not exit or otherwise modify its operation when security-relevant errors occur during initialization, such as when a configuration file has a format error, which can cause the software to execute in a less secure fashion than intended by the administrator.",699452
+Incomplete Cleanup - (459),348,699452459,"The software does not properly ""clean up"" and remove temporary or supporting resources after they have been used.Insufficient Cleanup",699452
+Improper Cleanup on Thrown Exception - (460),349,699452460,"The product does not clean up its state or incorrectly cleans up its state when an exception is thrown, leading to unexpected state or control flow.",699452
+Initialization with Hard-Coded Network Resource Configuration Data - (1051),350,6994521051,The software initializes data using hard-coded values that act as network resource identifiers.,699452
+Excessive Use of Hard-Coded Literals in Initialization - (1052),351,6994521052,"The software initializes a data element using a hard-coded
+					literal that is not a simple integer or static constant element.",699452
+Insecure Default Initialization of Resource - (1188),352,6994521188,"The software initializes or sets a resource with a default that is intended to be changed by the administrator, but the default is not secure.",699452
+Data Validation Issues - (1215),353,6991215,"Weaknesses in this category are related to a software system's components for input validation, output validation, or other kinds of validation. Validation is a frequently-used technique for ensuring that data conforms to expectations before it is further processed as input or output.  There are many varieties of validation (see CWE-20, which is just for input validation). Validation is distinct from other techniques that attempt to modify data before processing it, although developers may consider all attempts to product ""safe"" inputs or outputs as some kind of validation.  Regardless, validation is a powerful tool that is often used to minimize malformed data from entering the system, or indirectly avoid code injection or other potentially-malicious patterns when generating output. The weaknesses in this category could lead to a degradation of the quality of data flow in a system if they are not addressed.",0
+Missing XML Validation - (112),354,6991215112,The software accepts XML from an untrusted source but does not validate the XML against the proper schema.,6991215
+Improper Validation of Array Index - (129),355,6991215129,"The product uses untrusted input when calculating or using an array index, but the product does not validate or incorrectly validates the index to ensure the index references a valid position within the array.out-of-bounds array indexindex-out-of-rangearray index underflow",6991215
+Incorrect Behavior Order: Early Validation - (179),356,6991215179,"The software validates input before applying protection mechanisms that modify the input, which could allow an attacker to bypass the validation via dangerous inputs that only arise after the modification.",6991215
+Permissive List of Allowed Inputs - (183),357,6991215183,"The product implements a protection mechanism that relies on a list of inputs (or properties of inputs) that are explicitly allowed by policy because the inputs are assumed to be safe, but the list is too permissive - that is, it allows an input that is unsafe, leading to resultant weaknesses.Allowlist / Allow ListSafelist / Safe ListWhitelist / White List",6991215
+Incomplete List of Disallowed Inputs - (184),358,6991215184,"The product implements a protection mechanism that relies on a list of inputs (or properties of inputs) that are not allowed by policy or otherwise require other action to neutralize before additional processing takes place, but the list is incomplete, leading to resultant weaknesses.Denylist / Deny ListBlocklist / Block ListBlacklist / Black List",6991215
+Unchecked Input for Loop Condition - (606),359,6991215606,"The product does not properly check inputs that are used for loop conditions, potentially leading to a denial of service or other consequences because of excessive looping.",6991215
+Improper Restriction of Names for Files and Other Resources - (641),360,6991215641,"The application constructs the name of a file or other resource using input from an upstream component, but it does not restrict or incorrectly restricts the resulting name.",6991215
+Improper Use of Validation Framework - (1173),361,69912151173,"The application does not use, or incorrectly uses, an input validation framework that is provided by the source language or an independent library.",6991215
+Lockout Mechanism Errors - (1216),362,6991216,Weaknesses in this category are related to a software system's lockout mechanism. Frequently these deal with scenarios that take effect in case of multiple failed attempts to access a given resource. The weaknesses in this category could lead to a degradation of access to system assets if they are not addressed.,0
+Overly Restrictive Account Lockout Mechanism - (645),363,6991216645,"The software contains an account lockout protection mechanism, but the mechanism is too restrictive and can be triggered too easily, which allows attackers to deny service to legitimate users by causing their accounts to be locked out.",6991216
+Memory Buffer Errors - (1218),364,6991218,Weaknesses in this category are related to the handling of memory buffers within a software system.,0
+Buffer Copy without Checking Size of Input ('Classic Buffer Overflow') - (120),365,6991218120,"The program copies an input buffer to an output buffer without verifying that the size of the input buffer is less than the size of the output buffer, leading to a buffer overflow.buffer overrunUnbounded Transfer",6991218
+Write-what-where Condition - (123),366,6991218123,"Any condition where the attacker has the ability to write an arbitrary value to an arbitrary location, often as the result of a buffer overflow.",6991218
+Buffer Underwrite ('Buffer Underflow') - (124),367,6991218124,The software writes to a buffer using an index or pointer that references a memory location prior to the beginning of the buffer.buffer underrun,6991218
+Out-of-bounds Read - (125),368,6991218125,"The software reads data past the end, or before the beginning, of the intended buffer.",6991218
+Incorrect Calculation of Buffer Size - (131),369,6991218131,"The software does not correctly calculate the size to be used when allocating a buffer, which could lead to a buffer overflow.",6991218
+Access of Memory Location Before Start of Buffer - (786),370,6991218786,The software reads or writes to a buffer using an index or pointer that references a memory location prior to the beginning of the buffer.,6991218
+Out-of-bounds Write - (787),371,6991218787,"The software writes data past the end, or before the beginning, of the intended buffer.",6991218
+Access of Memory Location After End of Buffer - (788),372,6991218788,The software reads or writes to a buffer using an index or pointer that references a memory location after the end of the buffer.,6991218
+Buffer Access with Incorrect Length Value - (805),373,6991218805,"The software uses a sequential operation to read or write a buffer, but it uses an incorrect length value that causes it to access memory that is outside of the bounds of the buffer.",6991218
+Numeric Errors - (189),374,699189,Weaknesses in this category are related to improper calculation or conversion of numbers.,0
+Wrap-around Error - (128),375,699189128,"Wrap around errors occur whenever a value is incremented past the maximum value for its type and therefore ""wraps around"" to a very small, negative, or undefined value.",699189
+Integer Overflow or Wraparound - (190),376,699189190,"The software performs a calculation that can produce an integer overflow or wraparound, when the logic assumes that the resulting value will always be larger than the original value. This can introduce other weaknesses when the calculation is used for resource management or execution control.",699189
+Integer Underflow (Wrap or Wraparound) - (191),377,699189191,"The product subtracts one value from another, such that the result is less than the minimum allowable integer value, which produces a value that is not equal to the correct result.Integer underflow",699189
+Integer Coercion Error - (192),378,699189192,"Integer coercion refers to a set of flaws pertaining to the type casting, extension, or truncation of primitive data types.",699189
+Off-by-one Error - (193),379,699189193,"A product calculates or uses an incorrect maximum or minimum value that is 1 more, or 1 less, than the correct value.off-by-five",699189
+Numeric Truncation Error - (197),380,699189197,Truncation errors occur when a primitive is cast to a primitive of a smaller size and data is lost in the conversion.,699189
+Use of Incorrect Byte Ordering - (198),381,699189198,"The software receives input from an upstream component, but it does not account for byte ordering (e.g. big-endian and little-endian) when processing the input, causing an incorrect number or value to be used.",699189
+Divide By Zero - (369),382,699189369,The product divides a value by zero.,699189
+Incorrect Conversion between Numeric Types - (681),383,699189681,"When converting from one data type to another, such as long to integer, data can be omitted or translated in a way that produces unexpected values. If the resulting values are used in a sensitive context, then dangerous behaviors may occur.",699189
+Numeric Range Comparison Without Minimum Check - (839),384,699189839,"The program checks a value to ensure that it is less than or equal to a maximum, but it does not also verify that the value is greater than or equal to the minimum.Signed comparison",699189
+Floating Point Comparison with Incorrect Operator - (1077),385,6991891077,"The code performs a comparison such as an
+        equality test between two float (floating point) values, but
+        it uses comparison operators that do not account for the
+        possibility of loss of precision.",699189
+Permission Issues - (275),386,699275,Weaknesses in this category are related to improper assignment or handling of permissions.,0
+Incorrect Default Permissions - (276),387,699275276,"The product, upon installation, sets incorrect permissions for an object that exposes it to an unintended actor.",699275
+Insecure Inherited Permissions - (277),388,699275277,A product defines a set of insecure permissions that are inherited by objects that are created by the program.,699275
+Insecure Preserved Inherited Permissions - (278),389,699275278,"A product inherits a set of insecure permissions for an object, e.g. when copying from an archive file, without user awareness or involvement.",699275
+Incorrect Execution-Assigned Permissions - (279),390,699275279,"While it is executing, the software sets the permissions of an object in a way that violates the intended permissions that have been specified by the user.",699275
+Improper Handling of Insufficient Permissions or Privileges  - (280),391,699275280,The application does not handle or incorrectly handles when it has insufficient privileges to access resources or functionality as specified by their permissions. This may cause it to follow unexpected code paths that may leave the application in an invalid state.,699275
+Improper Preservation of Permissions - (281),392,699275281,"The software does not preserve permissions or incorrectly preserves permissions when copying, restoring, or sharing objects, which can cause them to have less restrictive permissions than intended.",699275
+Exposed Unsafe ActiveX Method - (618),393,699275618,"An ActiveX control is intended for use in a web browser, but it exposes dangerous methods that perform actions that are outside of the browser's security model (e.g. the zone or domain).",699275
+Critical Data Element Declared Public - (766),394,699275766,"The software declares a critical variable, field, or member to be public when intended security policy requires it to be private.",699275
+Access to Critical Private Variable via Public Method - (767),395,699275767,The software defines a public method that reads or modifies a private variable.,699275
+Pointer Issues - (465),396,699465,Weaknesses in this category are related to improper handling of pointers.,0
+Return of Pointer Value Outside of Expected Range - (466),397,699465466,A function can return a pointer to memory that is outside of the buffer that the pointer is expected to reference.,699465
+Use of sizeof() on a Pointer Type - (467),398,699465467,"The code calls sizeof() on a malloced pointer type, which always returns the wordsize/8. This can produce an unexpected result if the programmer intended to determine how much memory has been allocated.",699465
+Incorrect Pointer Scaling - (468),399,699465468,"In C and C++, one may often accidentally refer to the wrong memory due to the semantics of when math operations are implicitly scaled.",699465
+Use of Pointer Subtraction to Determine Size - (469),400,699465469,"The application subtracts one pointer from another in order to determine size, but this calculation can be incorrect if the pointers do not exist in the same memory chunk.",699465
+NULL Pointer Dereference - (476),401,699465476,"A NULL pointer dereference occurs when the application dereferences a pointer that it expects to be valid, but is NULL, typically causing a crash or exit.",699465
+Assignment of a Fixed Address to a Pointer - (587),402,699465587,The software sets a pointer to a specific address other than NULL or 0.,699465
+Attempt to Access Child of a Non-structure Pointer - (588),403,699465588,Casting a non-structure type to a structure type and accessing a field can lead to memory access errors or data corruption.,699465
+Release of Invalid Pointer or Reference - (763),404,699465763,"The application attempts to return a memory resource to the system, but calls the wrong release function or calls the appropriate release function incorrectly.",699465
+Untrusted Pointer Dereference - (822),405,699465822,"The program obtains a value from an untrusted source, converts this value to a pointer, and dereferences the resulting pointer.",699465
+Use of Out-of-range Pointer Offset - (823),406,699465823,"The program performs pointer arithmetic on a valid pointer, but it uses an offset that can point outside of the intended range of valid memory locations for the resulting pointer.Untrusted pointer offset",699465
+Access of Uninitialized Pointer - (824),407,699465824,The program accesses or uses a pointer that has not been initialized.,699465
+Expired Pointer Dereference - (825),408,699465825,"The program dereferences a pointer that contains a location for memory that was previously valid, but is no longer valid.Dangling pointer",699465
+Privilege Issues - (265),409,699265,"Weaknesses in this category occur with improper handling, assignment, or management of privileges. A privilege is a property of an agent, such as a user. It lets the agent do things that are not ordinarily allowed. For example, there are privileges which allow an agent to perform maintenance functions such as restart a computer.",0
+Creation of chroot Jail Without Changing Working Directory - (243),410,699265243,"The program uses the chroot() system call to create a jail, but does not change the working directory afterward. This does not prevent access to files outside of the jail.",699265
+Execution with Unnecessary Privileges - (250),411,699265250,"The software performs an operation at a privilege level that is higher than the minimum level required, which creates new weaknesses or amplifies the consequences of other weaknesses.",699265
+Incorrect Privilege Assignment - (266),412,699265266,"A product incorrectly assigns a privilege to a particular actor, creating an unintended sphere of control for that actor.",699265
+Privilege Defined With Unsafe Actions - (267),413,699265267,"A particular privilege, role, capability, or right can be used to perform unsafe actions that were not intended, even when it is assigned to the correct entity.",699265
+Privilege Chaining - (268),414,699265268,"Two distinct privileges, roles, capabilities, or rights can be combined in a way that allows an entity to perform unsafe actions that would not be allowed without that combination.",699265
+Privilege Context Switching Error - (270),415,699265270,The software does not properly manage privileges while it is switching between different contexts that have different privileges or spheres of control.,699265
+Least Privilege Violation - (272),416,699265272,The elevated privilege level required to perform operations such as chroot() should be dropped immediately after the operation is performed.,699265
+Improper Check for Dropped Privileges - (273),417,699265273,The software attempts to drop privileges but does not check or incorrectly checks to see if the drop succeeded.,699265
+Improper Handling of Insufficient Privileges - (274),418,699265274,"The software does not handle or incorrectly handles when it has insufficient privileges to perform an operation, leading to resultant weaknesses.",699265
+Improper Handling of Insufficient Permissions or Privileges  - (280),419,699265280,The application does not handle or incorrectly handles when it has insufficient privileges to access resources or functionality as specified by their permissions. This may cause it to follow unexpected code paths that may leave the application in an invalid state.,699265
+Trust Boundary Violation - (501),420,699265501,The product mixes trusted and untrusted data in the same data structure or structured message.,699265
+clone() Method Without super.clone() - (580),421,699265580,The software contains a clone() method that does not call super.clone() to obtain the new object.,699265
+Incorrect Use of Privileged APIs - (648),422,699265648,The application does not conform to the API requirements for a function call that requires extra privileges. This could allow attackers to gain privileges by causing the function to be called incorrectly.,699265
+Random Number Issues - (1213),423,6991213,Weaknesses in this category are related to a software system's random number generation.,0
+Insufficient Entropy - (331),424,6991213331,"The software uses an algorithm or scheme that produces insufficient entropy, leaving patterns or clusters of values that are more likely to occur than others.",6991213
+Small Space of Random Values - (334),425,6991213334,"The number of possible random values is smaller than needed by the product, making it more susceptible to brute force attacks.",6991213
+Incorrect Usage of Seeds in Pseudo-Random Number Generator (PRNG) - (335),426,6991213335,The software uses a Pseudo-Random Number Generator (PRNG) that does not correctly manage seeds.,6991213
+Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG) - (338),427,6991213338,"The product uses a Pseudo-Random Number Generator (PRNG) in a security context, but the PRNG's algorithm is not cryptographically strong.",6991213
+Predictable from Observable State - (341),428,6991213341,"A number or object is predictable based on observations that the attacker can make about the state of the system or network, such as time, process ID, etc.",6991213
+Predictable Exact Value from Previous Values - (342),429,6991213342,An exact value or random number can be precisely predicted by observing previous values.,6991213
+Predictable Value Range from Previous Values - (343),430,6991213343,"The software's random number generator produces a series of values which, when observed, can be used to infer a relatively small range of possibilities for the next value that could be generated.",6991213
+Use of Predictable Algorithm in Random Number Generator - (1241),431,69912131241,The product requires a true random number but uses an algorithm that is predictable and generates a pseudo-random number.,6991213
+Resource Locking Problems - (411),432,699411,Weaknesses in this category are related to improper handling of locks that are used to control access to resources.,0
+Unrestricted Externally Accessible Lock - (412),433,699411412,"The software properly checks for the existence of a lock, but the lock can be externally controlled or influenced by an actor that is outside of the intended sphere of control.",699411
+Improper Resource Locking - (413),434,699411413,The software does not lock or does not correctly lock a resource when the software must have exclusive access to the resource.,699411
+Missing Lock Check - (414),435,699411414,A product does not check to see if a lock is present before performing sensitive operations on a resource.,699411
+Double-Checked Locking - (609),436,699411609,"The program uses double-checked locking to access a resource without the overhead of explicit synchronization, but the locking is insufficient.",699411
+Multiple Locks of a Critical Resource - (764),437,699411764,"The software locks a critical resource more times than intended, leading to an unexpected state in the system.",699411
+Multiple Unlocks of a Critical Resource - (765),438,699411765,"The software unlocks a critical resource more times than intended, leading to an unexpected state in the system.",699411
+Unlock of a Resource that is not Locked - (832),439,699411832,The software attempts to unlock a resource that is not locked.,699411
+Deadlock - (833),440,699411833,"The software contains multiple threads or executable segments that are waiting for each other to release a necessary lock, resulting in deadlock.",699411
+Resource Management Errors - (399),441,699399,Weaknesses in this category are related to improper management of system resources.,0
+External Control of File Name or Path - (73),442,69939973,The software allows user input to control or influence paths or file names that are used in filesystem operations.,699399
+Exposure of File Descriptor to Unintended Control Sphere ('File Descriptor Leak') - (403),443,699399403,"A process does not close sensitive file descriptors before invoking a child process, which allows the child to perform unauthorized I/O operations using those descriptors.File descriptor leak",699399
+Insufficient Resource Pool - (410),444,699399410,"The software's resource pool is not large enough to handle peak demand, which allows an attacker to prevent others from accessing the resource by using a (relatively) large number of requests for resources.",699399
+Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection') - (470),445,699399470,"The application uses external input with reflection to select which classes or code to use, but it does not sufficiently prevent the input from selecting improper classes or code.Reflection Injection",699399
+Deserialization of Untrusted Data - (502),446,699399502,"The application deserializes untrusted data without sufficiently verifying that the resulting data will be valid.Marshaling, UnmarshalingPickling, UnpicklingPHP Object Injection",699399
+Dangling Database Cursor ('Cursor Injection') - (619),447,699399619,"If a database cursor is not closed properly, then it could become accessible to other users while retaining the same privileges that were originally assigned, leaving the cursor ""dangling.""",699399
+Improper Restriction of Names for Files and Other Resources - (641),448,699399641,"The application constructs the name of a file or other resource using input from an upstream component, but it does not restrict or incorrectly restricts the resulting name.",699399
+Use of Multiple Resources with Duplicate Identifier - (694),449,699399694,"The software uses multiple resources that can have the same identifier, in a context in which unique identifiers are required.",699399
+Release of Invalid Pointer or Reference - (763),450,699399763,"The application attempts to return a memory resource to the system, but calls the wrong release function or calls the appropriate release function incorrectly.",699399
+Allocation of Resources Without Limits or Throttling - (770),451,699399770,"The software allocates a reusable resource or group of resources on behalf of an actor without imposing any restrictions on the size or number of resources that can be allocated, in violation of the intended security policy for that actor.",699399
+Missing Reference to Active Allocated Resource - (771),452,699399771,"The software does not properly maintain a reference to a resource that has been allocated, which prevents the resource from being reclaimed.",699399
+Missing Release of Resource after Effective Lifetime - (772),453,699399772,"The software does not release a resource after its effective lifetime has ended, i.e., after the resource is no longer needed.",699399
+Premature Release of Resource During Expected Lifetime - (826),454,699399826,The program releases a resource that is still intended to be used by the program itself or another actor.,699399
+Use of Uninitialized Resource - (908),455,699399908,The software uses or accesses a resource that has not been initialized.,699399
+Missing Initialization of Resource - (909),456,699399909,The software does not initialize a critical resource.,699399
+Use of Expired File Descriptor - (910),457,699399910,The software uses or accesses a file descriptor after it has been closed.Stale file descriptor,699399
+Improper Update of Reference Count - (911),458,699399911,"The software uses a reference count to manage a resource, but it does not update or incorrectly updates the reference count.",699399
+Improper Control of Dynamically-Identified Variables - (914),459,699399914,The software does not properly restrict reading from or writing to dynamically-identified variables.,699399
+Improperly Controlled Modification of Dynamically-Determined Object Attributes - (915),460,699399915,"The software receives input from an upstream component that specifies multiple attributes, properties, or fields that are to be initialized or updated in an object, but it does not properly control which attributes can be modified.Mass AssignmentAutoBindingPHP Object Injection",699399
+Improper Restriction of Power Consumption - (920),461,699399920,"The software operates in an environment in which power is a limited resource that cannot be automatically replenished, but the software does not properly restrict the amount of power that its operation consumes.",699399
+Insecure Default Initialization of Resource - (1188),462,6993991188,"The software initializes or sets a resource with a default that is intended to be changed by the administrator, but the default is not secure.",699399
+Signal Errors - (387),463,699387,Weaknesses in this category are related to the improper handling of signals.,0
+Signal Handler Race Condition - (364),464,699387364,The software uses a signal handler that introduces a race condition.,699387
+Dangerous Signal Handler not Disabled During Sensitive Operations - (432),465,699387432,"The application uses a signal handler that shares state with other signal handlers, but it does not properly mask or prevent those signal handlers from being invoked while the original signal handler is still running.",699387
+Signal Handler with Functionality that is not Asynchronous-Safe - (828),466,699387828,"The software defines a signal handler that contains code sequences that are not asynchronous-safe, i.e., the functionality is not reentrant, or it can be interrupted.",699387
+Signal Handler Function Associated with Multiple Signals - (831),467,699387831,The software defines a function that is used as a handler for more than one signal.,699387
+State Issues - (371),468,699371,Weaknesses in this category are related to improper management of system state.,0
+External Control of System or Configuration Setting - (15),469,69937115,One or more system settings or configuration elements can be externally controlled by a user.,699371
+Incomplete Internal State Distinction - (372),470,699371372,"The software does not properly determine which state it is in, causing it to assume it is in state X when in fact it is in state Y, causing it to perform incorrect operations in a security-relevant manner.",699371
+Passing Mutable Objects to an Untrusted Method - (374),471,699371374,The program sends non-cloned mutable data as an argument to a method or function.,699371
+Returning a Mutable Object to an Untrusted Caller - (375),472,699371375,Sending non-cloned mutable data as a return value may result in that data being altered or deleted by the calling function.,699371
+Unintended Reentrant Invocation of Non-reentrant Code Via Nested Calls - (1265),473,6993711265,"During execution of non-reentrant code, the software performs a call that unintentionally produces a nested invocation of the non-reentrant code.",699371
+String Errors - (133),474,699133,Weaknesses in this category are related to the creation and modification of strings.,0
+Use of Externally-Controlled Format String - (134),475,699133134,"The software uses a function that accepts a format string as an argument, but the format string originates from an external source.",699133
+Incorrect Calculation of Multi-Byte String Length - (135),476,699133135,The software does not correctly calculate the length of strings that can contain wide or multi-byte characters.,699133
+Use of Wrong Operator in String Comparison - (597),477,699133597,"The product uses the wrong operator when comparing a string, such as using ""=="" when the equals() method should be used instead.",699133
+Type Errors - (136),478,699136,Weaknesses in this category are caused by improper data type transformation or improper handling of multiple data types.,0
+Incorrect Conversion between Numeric Types - (681),479,699136681,"When converting from one data type to another, such as long to integer, data can be omitted or translated in a way that produces unexpected values. If the resulting values are used in a sensitive context, then dangerous behaviors may occur.",699136
+Access of Resource Using Incompatible Type ('Type Confusion') - (843),480,699136843,"The program allocates or initializes a resource such as a pointer, object, or variable using one type, but it later accesses that resource using a type that is incompatible with the original type.Object Type Confusion",699136
+User Interface Security Issues - (355),481,699355,Weaknesses in this category are related to or introduced in the User Interface (UI).,0
+Cleartext Storage of Sensitive Information in GUI - (317),482,699355317,The application stores sensitive information in cleartext within the GUI.,699355
+Product UI does not Warn User of Unsafe Actions - (356),483,699355356,The software's user interface does not warn the user before undertaking an unsafe action on behalf of that user. This makes it easier for attackers to trick users into inflicting damage to their system.,699355
+Insufficient UI Warning of Dangerous Operations - (357),484,699355357,"The user interface provides a warning to a user regarding dangerous or sensitive operations, but the warning is not noticeable enough to warrant attention.",699355
+Unimplemented or Unsupported Feature in UI - (447),485,699355447,"A UI function for a security feature appears to be supported and gives feedback to the user that suggests that it is supported, but the underlying functionality is not implemented.",699355
+Obsolete Feature in UI - (448),486,699355448,A UI function is obsolete and the product does not warn the user.,699355
+The UI Performs the Wrong Action - (449),487,699355449,The UI performs the wrong action with respect to the user's request.,699355
+Multiple Interpretations of UI Input - (450),488,699355450,The UI has multiple interpretations of user input but does not prompt the user when it selects the less secure interpretation.,699355
+Missing Password Field Masking - (549),489,699355549,"The software does not mask passwords during entry, increasing the potential for attackers to observe and capture passwords.",699355
+Insufficient Visual Distinction of Homoglyphs Presented to User - (1007),490,6993551007,"The software displays information or identifiers to a user, but the display mechanism does not make it easy for the user to distinguish between visually similar or identical glyphs (homoglyphs), which may cause the user to misinterpret a glyph and perform an unintended, insecure action.Homograph Attack",699355
+Improper Restriction of Rendered UI Layers or Frames - (1021),491,6993551021,"The web application does not restrict or incorrectly restricts frame objects or UI layers that belong to another application or domain, which can lead to user confusion about which interface the user is interacting with.ClickjackingUI Redress AttackTapjacking",699355
+User Session Errors - (1217),492,6991217,Weaknesses in this category are related to session management. Frequently these deal with the information or status about each user and their access rights for the duration of multiple requests. The weaknesses in this category could lead to a degradation of the quality of session management if they are not addressed.,0
+Exposure of Data Element to Wrong Session - (488),493,6991217488,"The product does not sufficiently enforce boundaries between the states of different sessions, causing data to be provided to, or used by, the wrong session.",6991217
+Insufficient Session Expiration - (613),494,6991217613,"According to WASC, ""Insufficient Session Expiration is when a web site permits an attacker to reuse old session credentials or session IDs for authorization.""",6991217
+Improper Enforcement of Behavioral Workflow - (841),495,6991217841,"The software supports a session in which more than one behavior must be performed by an actor, but it does not properly ensure that the actor performs the behaviors in the required sequence.",6991217
