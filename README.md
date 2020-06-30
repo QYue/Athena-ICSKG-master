@@ -1,7 +1,7 @@
 # Athena-ICSKG-master
 Knowledge Graph  for vulnerabilities of Industrial Control Systems
 
-This repository is still to be updated.
+This repository is still being updated.
 
 
 Usage
